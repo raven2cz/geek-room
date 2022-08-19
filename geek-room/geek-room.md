@@ -1,8 +1,9 @@
 ---
 title: geek-room
 tags: [Notebooks/Geek Room]
+pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-08-19T12:33:00.536Z
+modified: 2022-08-19T13:52:14.282Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -24,6 +25,8 @@ There are a list of following topics
 * [Git Bare Repository for Dotfiles](git-bare-repo/git-bare-repo.md)
 * Polybar for DWM, AW
 * Pass, gpg, passff, rofi-pass, password store, OpenKeyChain
+* With Ansible on daily routines
+* Notable: Markdown Notes Taking
 
 ## Distros
 
@@ -34,4 +37,4 @@ There are a list of following topics
 ## Games
 * Minecraft Linux Basic Installation
 * Minecraft Advanced Addons Installation
-
+* Minecraft Survive
