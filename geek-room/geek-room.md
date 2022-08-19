@@ -1,13 +1,13 @@
 ---
-title: Geek-Room
+title: geek-room
 tags: [Notebooks/Geek Room]
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-08-19T11:55:51.036Z
+modified: 2022-08-19T12:33:00.536Z
 ---
 
-![geek-room-banner](../attachments/Geek-Room-banner.png)
+![geek-room-banner](attachments/geek-room-banner.png)
 
-# Geek-Room
+# geek-room
 
 **Welcome to my room!**
 
@@ -21,7 +21,6 @@ There are a list of following topics
 
 ## Technical
 
-* [Banner and Readme](README.md)
 * [Git Bare Repository for Dotfiles](git-bare-repo/git-bare-repo.md)
 * Polybar for DWM, AW
 * Pass, gpg, passff, rofi-pass, password store, OpenKeyChain

@@ -1,1 +1,1 @@
-./Geek-Room/Geek-Room.md
+./geek-room/geek-room.md
