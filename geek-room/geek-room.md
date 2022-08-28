@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-08-19T13:52:14.282Z
+modified: 2022-08-28T08:45:47.905Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -19,6 +19,16 @@ This channel is focused on new technologies, software features, game news and GN
 Individual topics will be gradually covered and YT videos will be uploaded and connected. So I'm presenting a preliminary plan here too. If you are interested in other points, create an GitHub issue, we will discuss it.
 
 There are a list of following topics
+
+<!--ts-->
+* [geek-room](#geek-room)
+   * [Technical](#technical)
+   * [Distros](#distros)
+   * [Games](#games)
+
+<!-- Added by: box, at: Sun Aug 28 10:45:58 AM CEST 2022 -->
+
+<!--te-->
 
 ## Technical
 
