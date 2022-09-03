@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-08-28T08:45:47.905Z
+modified: 2022-08-28T11:38:34.340Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -26,7 +26,7 @@ There are a list of following topics
    * [Distros](#distros)
    * [Games](#games)
 
-<!-- Added by: box, at: Sun Aug 28 10:45:58 AM CEST 2022 -->
+<!-- Added by: box, at: Sat Sep  3 08:57:47 PM CEST 2022 -->
 
 <!--te-->
 
