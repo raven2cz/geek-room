@@ -26,7 +26,7 @@ There are a list of following topics
    * [Distros](#distros)
    * [Games](#games)
 
-<!-- Added by: box, at: Sat Sep  3 08:57:47 PM CEST 2022 -->
+<!-- Added by: box, at: Sat Sep  3 09:07:29 PM CEST 2022 -->
 
 <!--te-->
 

@@ -2,7 +2,7 @@
 title: git-bare-repo
 tags: [Notebooks/Geek Room]
 created: 2022-08-17T14:48:58.578Z
-modified: 2022-09-03T18:57:05.452Z
+modified: 2022-09-03T19:05:38.979Z
 ---
 
 ![git-bare-repo-banner](../attachments/git-bare-repo-banner.png)
@@ -17,7 +17,7 @@ modified: 2022-09-03T18:57:05.452Z
    * [Version Control for root files and system files](#version-control-for-root-files-and-system-files)
    * [Conclusion](#conclusion)
 
-<!-- Added by: box, at: Sat Sep  3 08:57:47 PM CEST 2022 -->
+<!-- Added by: box, at: Sat Sep  3 09:07:29 PM CEST 2022 -->
 
 <!--te-->
 
@@ -56,7 +56,7 @@ For `config push`, you need already created git remote repo, or you have to conn
 
 ```shell
 config remote set-url origin git@github.com:user/dotfiles.git # just for example, connect git local repo with your remote, or create new one
-git push -u origin master
+git push -u origin main # push to main branch or specific station branch. Branches are created for each station or station group
 ```
 
 So, what did you done? If you look to your `alias`, whole home directory is used as BARE repository for you git. You can easily add any files which you want to have revision git control for this file! It is freedom, just add files, check their statuses, update it, delete it, create branches for other stations, sync files between stations, servers etc. 
