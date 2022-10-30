@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-08-28T11:38:34.340Z
+modified: 2022-10-30T10:03:21.528Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -26,7 +26,7 @@ There are a list of following topics
    * [Distros](#distros)
    * [Games](#games)
 
-<!-- Added by: box, at: Sat Sep  3 09:07:29 PM CEST 2022 -->
+<!-- Added by: box, at: Sun Oct 30 11:16:19 AM CET 2022 -->
 
 <!--te-->
 
@@ -34,7 +34,7 @@ There are a list of following topics
 
 * [Git Bare Repository for Dotfiles](git-bare-repo/git-bare-repo.md)
 * Polybar for DWM, AW
-* Pass, gpg, passff, rofi-pass, password store, OpenKeyChain
+* [Pass, gpg, passff, rofi-pass, password store, OpenKeyChain](pass-zx2c4/pass-zx2c4.md)
 * With Ansible on daily routines
 * Notable: Markdown Notes Taking
 
