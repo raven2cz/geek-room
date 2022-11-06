@@ -3,7 +3,7 @@ title: pass-zx2c4
 tags: [Notebooks/Geek Room]
 favorited: true
 created: 2022-10-30T08:26:09.163Z
-modified: 2022-10-30T12:51:56.420Z
+modified: 2022-11-06T07:59:16.196Z
 ---
 
 ![pass-zx2c4-banner](../attachments/pass-zx2c4-banner.png)
@@ -33,7 +33,7 @@ modified: 2022-10-30T12:51:56.420Z
    * [Next Apps and Possibilities](#next-apps-and-possibilities)
    * [Pass - Credit &amp; License](#pass---credit--license)
 
-<!-- Added by: box, at: Sun Oct 30 01:52:32 PM CET 2022 -->
+<!-- Added by: box, at: Sun Nov  6 09:00:41 AM CET 2022 -->
 
 <!--te-->
 
@@ -101,7 +101,7 @@ https://wiki.archlinux.org/title/GnuPG
 sudo pacman -S gnupg
 nvim ~/.gnupg/gpg-agent.conf 
   pinentry-program /usr/bin/pinentry-curses
-	pinentry-program /usr/bin/pinentry-gnome3
+  pinentry-program /usr/bin/pinentry-gnome3
   max-cache-ttl 60480000
   default-cache-ttl 60480000
 
@@ -165,7 +165,7 @@ Sub-folders in `login` folder examples
 
 ### Syntax inside encrypted gpg file
 
-The first line belongs to password according to `pass` sytax.
+The first line belongs to password according to `pass` syntax.
 All next rows are optional according to your wish. For credit cards you can need much more rows for details. **You can store all which you need. It is just text file.**
 
 There is one important point! 
@@ -213,9 +213,9 @@ pass search archlinux
 
 ### Server-side
 
-First create `git bare private repo` on your server, private home cloud, or private cloud git repo (this last choice is not preferred from my side). It is standard git repository which will store your encoded gpg files and directory structure.
+First create `git bare private repo` on your server, private home cloud, or private cloud git repository (this last choice is not preferred from my side). It is standard git repository which will store your encoded gpg files and directory structure.
 
-If you don't know nothing about git or git servers. Follow previous article `git-bare-repo` or just read articles about github and git basic tutorials.
+If you don't know nothing about git or git servers. Follow previous article `git-bare-repo` or just read articles about GitHub and git basic tutorials.
 
 ### Client-side
 
@@ -320,7 +320,7 @@ paru -S browserpass
 
 Just install both android apps. First `PasswordStore` app has to be swapped in your phone with default password manager or just in browser settings. Second `OpenKeychain` app is storage for your private and public gpg keys and provides API for `PasswordStore`. 
 
-`PasswordStore` has full support for git private repos, git pull and push works from menu. 
+`PasswordStore` has full support for git private repositories, git pull and push works from menu. 
 
 I haven't any bugs with this solution and I'm using this password storage and manager several years.
 
