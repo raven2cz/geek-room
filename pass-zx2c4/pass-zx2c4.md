@@ -33,7 +33,7 @@ modified: 2022-11-06T07:59:16.196Z
    * [Next Apps and Possibilities](#next-apps-and-possibilities)
    * [Pass - Credit &amp; License](#pass---credit--license)
 
-<!-- Added by: box, at: Sat Dec  3 09:01:16 AM CET 2022 -->
+<!-- Added by: box, at: Sat Dec  3 09:03:08 AM CET 2022 -->
 
 <!--te-->
 
