@@ -2,7 +2,7 @@
 title: arch-install-luks-btrfs
 tags: [Notebooks/Geek Room]
 created: 2022-11-27T18:36:13.194Z
-modified: 2022-12-03T07:55:27.412Z
+modified: 2022-12-03T11:22:19.731Z
 ---
 
 <!--ts-->
@@ -95,7 +95,7 @@ modified: 2022-12-03T07:55:27.412Z
          * [Check if Secure Boot was enabled](#check-if-secure-boot-was-enabled)
       * [Docker on BTRFS Storage Driver](#docker-on-btrfs-storage-driver)
 
-<!-- Added by: box, at: Sat Dec  3 12:19:18 PM CET 2022 -->
+<!-- Added by: box, at: Sat Dec  3 12:23:18 PM CET 2022 -->
 
 <!--te-->
 
@@ -278,7 +278,7 @@ mount /dev/nvme0n1p1 /mnt/efi
 ## Arch Base Installation
 ### Install necessary packages
 ```shell
-pacstrap /mnt/ base base-devel linux linux-headers linux-firmware git btrfs-progs efibootmgr mkinitcpio dhcpcd bash-completion sudo neovim nano
+pacstrap /mnt/ base base-devel linux linux-headers linux-firmware polkit git btrfs-progs efibootmgr mkinitcpio dhcpcd bash-completion sudo neovim nano
 ```
 
 ## Configure the system
@@ -301,10 +301,9 @@ lsblk
 | NAME           | MAJ:MIN | RM | SIZE   | RO | TYPE  | MOUNTPOINT            |
 | -------------- | ------- | -- | ------ | -- | ----- | --------------------- |
 | nvme0n1        | 259:0   | 0  | 465.8G | 0  | disk  |                       |
-| ├─nvme0n1p1    | 259:4   | 0  | 1M     | 0  | part  |                       |
 | ├─nvme0n1p1    | 259:5   | 0  | 256M   | 0  | part  | /efi                  |
 | ├─nvme0n1p2    | 259:6   | 0  | 465.2G | 0  | part  |                       |
-| ..└─cryptbtrfs | 254:0   | 0  | 465.2G | 0  | crypt | /snapshots            |
+| ..└─cryptbtrfs | 254:0   | 0  | 465.2G | 0  | crypt | /.snapshots           |
 |                |         |    |        |    |       | /var/lib/docker       |
 |                |         |    |        |    |       | /var/cache/pacman/pkg |
 |                |         |    |        |    |       | /var/log              |
