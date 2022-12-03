@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-10-30T10:03:21.528Z
+modified: 2022-12-02T09:06:04.726Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -26,20 +26,21 @@ There are a list of following topics
    * [Distros](#distros)
    * [Games](#games)
 
-<!-- Added by: box, at: Sun Nov  6 09:00:41 AM CET 2022 -->
+<!-- Added by: box, at: Sat Dec  3 09:01:15 AM CET 2022 -->
 
 <!--te-->
 
 ## Technical
 
 * [Git Bare Repository for Dotfiles](git-bare-repo/git-bare-repo.md)
-* Polybar for DWM, AW
 * [Pass, gpg, passff, rofi-pass, password store, OpenKeyChain](pass-zx2c4/pass-zx2c4.md)
+* Polybar for DWM, AW
 * With Ansible on daily routines
 * Notable: Markdown Notes Taking
 
 ## Distros
 
+* [Arch Dailydriver LUKS/LVM, BTRFS, Base Installation](git-bare-repo/arch-install-luks-btrfs.md)
 * Gentoo Dailydriver
 * MX-Linux Dailydriver
 * Mabox Dailydriver
