@@ -95,7 +95,7 @@ modified: 2022-12-03T11:22:19.731Z
          * [Check if Secure Boot was enabled](#check-if-secure-boot-was-enabled)
       * [Docker on BTRFS Storage Driver](#docker-on-btrfs-storage-driver)
 
-<!-- Added by: box, at: Sat Dec  3 12:23:18 PM CET 2022 -->
+<!-- Added by: box, at: Sun Dec  4 01:38:09 PM CET 2022 -->
 
 <!--te-->
 

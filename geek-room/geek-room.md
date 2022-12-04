@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-12-03T11:18:14.021Z
+modified: 2022-12-04T12:37:05.284Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -26,7 +26,7 @@ There are a list of following topics
    * [Distros](#distros)
    * [Games](#games)
 
-<!-- Added by: box, at: Sat Dec  3 12:23:17 PM CET 2022 -->
+<!-- Added by: box, at: Sun Dec  4 01:38:08 PM CET 2022 -->
 
 <!--te-->
 
@@ -42,6 +42,7 @@ There are a list of following topics
 
 * [Arch Dailydriver - Fast Archinstall Installation LUKS, BTRFS, Base Installation](arch-install-archinstall-luks-btrfs/arch-install-archinstall-luks-btrfs.md)
 * [Arch Dailydriver - Manual Installation: LUKS, BTRFS, Base Installation](arch-install-luks-btrfs/arch-install-luks-btrfs.md)
+* [Raven2cz Arch GNU/Linux - Fast Post-Installation Guide](aarch-install-awesomewm/arch-install-awesomewm.md)
 * Gentoo Dailydriver
 * MX-Linux Dailydriver
 * Mabox Dailydriver
