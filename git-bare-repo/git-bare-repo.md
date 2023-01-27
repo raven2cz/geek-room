@@ -10,15 +10,6 @@ modified: 2022-09-03T19:05:38.979Z
 # git-bare-repo
 
 <!--ts-->
-* [git-bare-repo](#git-bare-repo)
-   * [What is a bare git repository?](#what-is-a-bare-git-repository)
-   * [Init your dotfiles for new station or station recovery](#init-your-dotfiles-for-new-station-or-station-recovery)
-   * [Next Game Level](#next-game-level)
-   * [Version Control for root files and system files](#version-control-for-root-files-and-system-files)
-   * [Conclusion](#conclusion)
-
-<!-- Added by: box, at: Sun Dec  4 01:41:01 PM CET 2022 -->
-
 <!--te-->
 
 ## What is a bare git repository?

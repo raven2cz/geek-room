@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2022-12-04T12:40:44.930Z
+modified: 2023-01-27T07:15:03.632Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -21,19 +21,13 @@ Individual topics will be gradually covered and YT videos will be uploaded and c
 There are a list of following topics
 
 <!--ts-->
-* [geek-room](#geek-room)
-   * [Technical](#technical)
-   * [Distros](#distros)
-   * [Games](#games)
-
-<!-- Added by: box, at: Sun Dec  4 01:41:00 PM CET 2022 -->
-
 <!--te-->
 
 ## Technical
 
 * [Git Bare Repository for Dotfiles](git-bare-repo/git-bare-repo.md)
 * [Pass, gpg, passff, rofi-pass, password store, OpenKeyChain](pass-zx2c4/pass-zx2c4.md)
+* [Intellij IDEA (cz)](intellij-idea-cz/intellij-idea-cz.md)
 * Polybar for DWM, AW
 * With Ansible on daily routines
 * Notable: Markdown Notes Taking
