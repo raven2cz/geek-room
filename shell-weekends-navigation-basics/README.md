@@ -1,0 +1,1 @@
+shell-weekends-navigation-basics.md

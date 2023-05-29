@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2023-01-27T07:15:03.632Z
+modified: 2023-05-29T12:36:13.682Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -30,7 +30,15 @@ There are a list of following topics
 * [Intellij IDEA (cz)](intellij-idea-cz/intellij-idea-cz.md)
 * Polybar for DWM, AW
 * With Ansible on daily routines
+
+## Apps/Scripts
+
+* [Midnight Commander](midnight-commander/midnight-commander.md)
 * Notable: Markdown Notes Taking
+
+## Shell Weekends
+
+* [Shell navigation, Basic operations](shell-weekends-navigation-basics/shell-weekends-navigation-basics.md)
 
 ## Distros
 
@@ -45,3 +53,4 @@ There are a list of following topics
 * Minecraft Linux Basic Installation
 * Minecraft Advanced Addons Installation
 * Minecraft Survive
+

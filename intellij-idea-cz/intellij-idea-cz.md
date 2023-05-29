@@ -3,7 +3,7 @@ title: intellij-idea-cz
 attachments: [Clipboard_2023-01-22-11-51-54.png]
 tags: [Notebooks/Geek Room]
 created: 2023-01-21T18:20:11.215Z
-modified: 2023-01-27T07:12:42.501Z
+modified: 2023-01-27T07:33:11.277Z
 ---
 
 ![intellij-idea-banner](../attachments/intellij-idea-banner.jpg)
@@ -195,6 +195,7 @@ CTS lze léčit odpočinkem, dlahami a fyzikální terapií. V některých pří
 * <kbd>ctrl + alt + j</kbd> - na proměnné, **Iterable**
 * <kbd>ctrl + alt + t</kbd> - surround with...
 * <kbd>ctrl + alt + o</kbd> - optimize imports, možno ale nastavit on-the-fly v nastavení, spíše ale řeší `spotless` plugin
+* <kbd>ctrl + alt + l</kbd> - format code according to your defined formatter
 * `Live Templates` - konfigurace v File → Settings → Editor → Live template
 
 ## Práce s editorem
