@@ -21,6 +21,15 @@ Individual topics will be gradually covered and YT videos will be uploaded and c
 There are a list of following topics
 
 <!--ts-->
+* [geek-room](#geek-room)
+   * [Technical](#technical)
+   * [Apps/Scripts](#appsscripts)
+   * [Shell Weekends](#shell-weekends)
+   * [Distros](#distros)
+   * [Games](#games)
+
+<!-- Added by: box, at: Thu Jun 15 12:44:45 PM CEST 2023 -->
+
 <!--te-->
 
 ## Technical

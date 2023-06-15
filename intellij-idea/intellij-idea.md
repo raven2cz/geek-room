@@ -10,6 +10,18 @@ modified: 2023-01-22T11:34:13.798Z
 # intellij-idea
 
 <!--ts-->
+* [intellij-idea](#intellij-idea)
+* [Intro](#intro)
+   * [Intellij IDEA](#intellij-idea-1)
+   * [JetBrains](#jetbrains)
+* [UI](#ui)
+* [Ergonomic (Mouseless)](#ergonomic-mouseless)
+* [Pro Tips](#pro-tips)
+   * [Built-in support for developing and deploying containerized applications using Docker](#built-in-support-for-developing-and-deploying-containerized-applications-using-docker)
+* [Another Worlds](#another-worlds)
+
+<!-- Added by: box, at: Thu Jun 15 12:44:46 PM CEST 2023 -->
+
 <!--te-->
 
 # Intro
