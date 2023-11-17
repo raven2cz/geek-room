@@ -1,12 +1,12 @@
 ---
-title: arch-install-luks-btrfs
+title: arch-install-luks-btrfs-dualboot
 tags: [Notebooks/Geek Room]
-created: 2022-11-27T18:36:13.194Z
-modified: 2022-12-03T11:22:19.731Z
+created: 2023-11-17T18:36:13.194Z
+modified: 2023-11-17T11:22:19.731Z
 ---
 
 <!--ts-->
-* [arch-install-luks-btrfs](#arch-install-luks-btrfs)
+* [arch-install-luks-btrfs-dualboot](#arch-install-luks-btrfs-dualboot)
    * [Source Links](#source-links)
 * [Arch Linux Full-Disk Encryption Base System Installation Guide](#arch-linux-full-disk-encryption-base-system-installation-guide)
    * [Preface](#preface)
@@ -15,6 +15,7 @@ modified: 2022-12-03T11:22:19.731Z
          * [Wifi Settings](#wifi-settings)
       * [Update the system clock](#update-the-system-clock)
       * [Optionally (recommended) update mirrorlist](#optionally-recommended-update-mirrorlist)
+      * [Arch install by SSH](#arch-install-by-ssh)
       * [Virtualbox tty resolution settings](#virtualbox-tty-resolution-settings)
       * [Preparing the disk](#preparing-the-disk)
          * [Update btrfs-progs](#update-btrfs-progs)
@@ -73,35 +74,17 @@ modified: 2022-12-03T11:22:19.731Z
          * [Regenerate GRUB's configuration file](#regenerate-grubs-configuration-file)
          * [Restrict /boot permissions](#restrict-boot-permissions)
    * [Post-installation](#post-installation)
+   * [Windows 11 Installation](#windows-11-installation)
       * [Speeding up LUKS decryption in GRUB](#speeding-up-luks-decryption-in-grub)
-      * [(recommended) Secure Boot - Hardening against Evil Maid attacks](#recommended-secure-boot---hardening-against-evil-maid-attacks)
-         * [Creating keys](#creating-keys)
-            * [Install efitools](#install-efitools)
-            * [Create a GUID for owner identification](#create-a-guid-for-owner-identification)
-            * [Platform key](#platform-key)
-            * [Sign an empty file to allow removing Platform Key when in "User Mode"](#sign-an-empty-file-to-allow-removing-platform-key-when-in-user-mode)
-            * [Key Exchange Key](#key-exchange-key)
-            * [Signature Database key](#signature-database-key)
-         * [Signing bootloader and kernel](#signing-bootloader-and-kernel)
-            * [Automatically sign bootloader and kernel on install and updates](#automatically-sign-bootloader-and-kernel-on-install-and-updates)
-         * [Enroll keys in firmware](#enroll-keys-in-firmware)
-            * [Copy all *.cer, *.esl, *.auth to the EFI system partition](#copy-all-cer-esl-auth-to-the-efi-system-partition)
-            * [Boot into UEFI firmware setup utility (frequently but incorrectly referred to as "BIOS")](#boot-into-uefi-firmware-setup-utility-frequently-but-incorrectly-referred-to-as-bios)
-            * [Set OS Type to Windows UEFI mode](#set-os-type-to-windows-uefi-mode)
-            * [Clear preloaded Secure Boot keys](#clear-preloaded-secure-boot-keys)
-            * [Set or append the new keys](#set-or-append-the-new-keys)
-            * [Set UEFI supervisor (administrator) password](#set-uefi-supervisor-administrator-password)
-            * [Exit and save changes](#exit-and-save-changes)
-         * [Check if Secure Boot was enabled](#check-if-secure-boot-was-enabled)
       * [Docker on BTRFS Storage Driver](#docker-on-btrfs-storage-driver)
 
 <!-- Added by: box, at: Fri Nov 17 07:38:06 PM CET 2023 -->
 
 <!--te-->
 
-# arch-install-luks-btrfs
+# arch-install-luks-btrfs-dualboot
 
-Arch Installation includes LUKS, BTRFS+Backup, Base Installation, Secure Boot.
+Arch Installation includes LUKS, BTRFS+Backup, Base Installation, Dualboot with Win11.
 
 ## Source Links
 
@@ -159,6 +142,19 @@ reflector --country 'Czechia' --age 24 --verbose --sort rate --save /etc/pacman.
 reflector -c "CZ" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist
 ```
 
+### Arch install by SSH
+
+```shell
+# in installed station
+# create/change password for root, ssh is set correctly in arch-iso
+passwd
+# remember ip address of computer
+ip a
+# remote station for installation process
+# start ssh session with created password for root
+ssh root@[ip-address]
+```
+
 ### Virtualbox tty resolution settings
 ```shell
 pacman -S fbset terminus-font
@@ -183,14 +179,16 @@ lsblk
 | 2      | 1130496        | 976773134    | 465.2 GiB | 8309 | Linux LUKS |
 
 ```shell
+# includes the luks partition 8309 ID
 gdisk /dev/nvme0n1
 
-# alternative apps
+# alternative apps - cannot be used for luks1
 cfdisk
 fdisk
 ```
 
 ```
+# we keep some empty space for windows after linux partition
 o
 n
 [Enter]
@@ -199,7 +197,7 @@ n
 ef00
 n
 [Enter]
-[Enter]
++256G  # for example 1/2 disk space
 [Enter]
 8309
 w
@@ -207,7 +205,7 @@ w
 
 #### Create the LUKS1 encrypted container on the Linux LUKS partition (GRUB does not support LUKS2 as of May 2019)
 ```shell
-cryptsetup luksFormat --type luks1 --use-random -S 1 -s 512 -h sha512 -i 5000 /dev/nvme0n1p2
+cryptsetup luksFormat --type luks1 --use-random -S 1 -s 512 -h sha512 -i 1000 /dev/nvme0n1p2
 ```
 
 #### Open the container (decrypt it and make available at /dev/mapper/cryptbtrfs)
@@ -251,16 +249,16 @@ umount /mnt
 #### Mount BTRFS Subvolumes
 
 ```shell
-mount -o defaults,noatime,discard,ssd,subvol=@ /dev/mapper/cryptbtrfs /mnt  
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@ /dev/mapper/cryptbtrfs /mnt  
+
 mkdir -p /mnt/{home,var/log,var/cache/pacman/pkg,var/lib/docker,tmp,.snapshots}
 
-# Discard and ssd options and are for ssd disks only
-mount -o defaults,noatime,discard,ssd,subvol=@home /dev/mapper/cryptbtrfs /mnt/home
-mount -o defaults,noatime,discard,ssd,subvol=@tmp /dev/mapper/cryptbtrfs /mnt/tmp
-mount -o defaults,noatime,discard,ssd,subvol=@log /dev/mapper/cryptbtrfs /mnt/var/log
-mount -o defaults,noatime,discard,ssd,subvol=@pkg /dev/mapper/cryptbtrfs /mnt/var/cache/pacman/pkg/
-mount -o defaults,noatime,discard,ssd,subvol=@docker /dev/mapper/cryptbtrfs /mnt/var/lib/docker
-mount -o defaults,noatime,discard,ssd,subvol=.@snapshots /dev/mapper/cryptbtrfs /mnt/.snapshots
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@home /dev/mapper/cryptbtrfs /mnt/home && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@tmp /dev/mapper/cryptbtrfs /mnt/tmp && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@log /dev/mapper/cryptbtrfs /mnt/var/log && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@pkg /dev/mapper/cryptbtrfs /mnt/var/cache/pacman/pkg && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@docker /dev/mapper/cryptbtrfs /mnt/var/lib/docker && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=.@snapshots /dev/mapper/cryptbtrfs /mnt/.snapshots
 ```
 
 ### Preparing the EFI partition
@@ -547,6 +545,58 @@ If you embedded the keyfile in the initramfs image, it should only require your 
 
 For the standard Arch Linux post-installation steps, [RTFM](https://wiki.archlinux.org/index.php/General_recommendations).
 
+## Windows 11 Installation
+
+We have prepared an empty partition right after `nvme0n1p2` on Windows 11. Now you can proceed with the installation. After rebooting, insert a USB stick with Windows 11, select the EFI USB stick from the computer's boot menu, and start the Windows 11 installation.
+
+You must choose an `advanced custom installation`, where in the disk editing window you select the appropriate empty area. You do not need to format the area, just click on it and continue; Windows will automatically divide it into its required partitions and begin a complete installation of Windows. Continue normally through the entire installation.
+
+The current version of Windows 11 will correctly insert its EFI into the ESP partition we created with Arch, however, it will save itself as the primary owner first in the GPT table. Sometimes it can even happen that your Arch EFI record from the GPT table gets deleted. After installing Windows, we now need to **boot back into Arch** using the Arch USB stick.
+
+Now that we have booted from the arch iso, we can repeat the steps for `arch-chroot` to get into our system. This procedure can always be used in case of any problems to rescue your installation.
+
+```shell
+# first, open encrypted disk with your master password
+cryptsetup open /dev/nvme0n1p2 cryptbtrfs
+# mount your encrypted partition
+mount /dev/mapper/cryptbtrfs /mnt
+# mount all
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@ /dev/mapper/cryptbtrfs /mnt  
+
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@home /dev/mapper/cryptbtrfs /mnt/home && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@tmp /dev/mapper/cryptbtrfs /mnt/tmp && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@log /dev/mapper/cryptbtrfs /mnt/var/log && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@pkg /dev/mapper/cryptbtrfs /mnt/var/cache/pacman/pkg && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=@docker /dev/mapper/cryptbtrfs /mnt/var/lib/docker && \
+mount -o defaults,noatime,discard,ssd,compress=zstd,subvol=.@snapshots /dev/mapper/cryptbtrfs /mnt/.snapshots
+# now, arch-chroot to our system
+arch-chroot /mnt
+# install ntfs support 
+sudo pacman -S ntfs-3g
+# uncomment os-prober in the /etc/default/grub
+GRUB_DISABLE_OS_PROBER=false
+# regenerate grub.conf and os-prober will find win11 parition
+grub-mkconfig -o /boot/grub/grub.cfg
+# check that the windows is found, if not, try to mount ntfs disk and run mkconfig again
+```
+
+Now we have correctly set up GRUB and it would suffice to restart the computer and the BIOS will correctly choose the last written EFI, which is our Grub2 with Arch. However, some of today's BIOS are very 'flawed'. Usually, they take the first record where Windows is, or EVEN delete other records from the GPT table. They don't support multiple records for EFIs. Unfortunately, this is the reality. However, we will manage this and before resetting, we will modify the GPT ourselves.
+
+```shell
+# list actual state of gpt
+efibootmgr -v
+# change boot order to START EFI with Arch Grub!
+# use your IDs in your table
+# 0001 includes Arch with grub2
+efibootmgr -o 0001,0000,0012,0013,0014,0015,0016,0017,0018,0019
+```
+
+**Congratulations! You have successfully set up a dual-boot system with ARCH LINUX on the same disk.** 
+
+Just restart, and importantly, do not turn on BIOS and its boot order! Hooray, Arch with Grub loads beautifully.
+
+It must be noted that the ESP part of EFI for Arch contains only a small binary file, everything else is not in EFI! We cleverly stored this in `/boot` with grub and kernel images, while `/efi` contains only then a binary file. This way, we can beautifully use only a small space in ESP for our purposes and any number of large kernel files in `/boot` in a secured part of the disk.
+
 ### Speeding up LUKS decryption in GRUB
 
 **Warning:** Before following this section, make sure you understand the importance of high entropy passwords. Information on how to generate secure passwords can be found at Wikipedia:Password strength.
@@ -568,181 +618,6 @@ cryptsetup luksChangeKey --pbkdf-force-iterations 1000 /dev/nvme0n1p2
 A minimum of 1000 iterations is recommended as per RFC 2898, but you should aim for higher values if you can (The cost for an attacker as well as the time for key derivation scale linearly).
 
 **Tip:** GRUB tries enabled key slots sequentially. When adding keys, the `--key-slot` option can be used to specify a key slot explicitly.
-
-### (recommended) Secure Boot - Hardening against Evil Maid attacks
-With an encrypted boot partition, nobody can see or modify your kernel image or initramfs, but you would be still vulnerable to [Evil Maid](https://www.schneier.com/blog/archives/2009/10/evil_maid_attac.html) attacks.
-
-One possible solution is to use UEFI Secure Boot. Get rid of preloaded Secure Boot keys (you really don't want to trust Microsoft and OEM), enroll [your own Secure Boot keys](https://wiki.archlinux.org/index.php/Secure_Boot#Using_your_own_keys) and sign the GRUB boot loader with your keys. Evil Maid would be unable to boot modified boot loader (not signed by your keys) and the attack is prevented.
-
-#### Creating keys
-The following steps should be performed as the `root` user, with accompanying files stored in the `/root` directory.
-
-##### Install `efitools`
-```shell
-pacman -S efitools
-```
-
-##### Create a GUID for owner identification
-```shell
-uuidgen --random > GUID.txt
-```
-
-##### Platform key
-CN is a Common Name, which can be written as anything.
-
-```shell
-openssl req -newkey rsa:4096 -nodes -keyout PK.key -new -x509 -sha256 -days 3650 -subj "/CN=my Platform Key/" -out PK.crt
-openssl x509 -outform DER -in PK.crt -out PK.cer
-cert-to-efi-sig-list -g "$(< GUID.txt)" PK.crt PK.esl
-sign-efi-sig-list -g "$(< GUID.txt)" -k PK.key -c PK.crt PK PK.esl PK.auth
-```
-
-##### Sign an empty file to allow removing Platform Key when in "User Mode"
-```shell
-sign-efi-sig-list -g "$(< GUID.txt)" -c PK.crt -k PK.key PK /dev/null rm_PK.auth
-```
-
-##### Key Exchange Key
-```shell
-openssl req -newkey rsa:4096 -nodes -keyout KEK.key -new -x509 -sha256 -days 3650 -subj "/CN=my Key Exchange Key/" -out KEK.crt
-openssl x509 -outform DER -in KEK.crt -out KEK.cer
-cert-to-efi-sig-list -g "$(< GUID.txt)" KEK.crt KEK.esl
-sign-efi-sig-list -g "$(< GUID.txt)" -k PK.key -c PK.crt KEK KEK.esl KEK.auth
-```
-
-##### Signature Database key
-```shell
-openssl req -newkey rsa:4096 -nodes -keyout db.key -new -x509 -sha256 -days 3650 -subj "/CN=my Signature Database key/" -out db.crt
-openssl x509 -outform DER -in db.crt -out db.cer
-cert-to-efi-sig-list -g "$(< GUID.txt)" db.crt db.esl
-sign-efi-sig-list -g "$(< GUID.txt)" -k KEK.key -c KEK.crt db db.esl db.auth
-```
-
-#### Signing bootloader and kernel
-When Secure Boot is active (i.e. in "User Mode") you will only be able to launch signed binaries, so you need to sign your kernel and boot loader.
-
-Install `sbsigntools`
-```shell
-pacman -S sbsigntools
-```
-```shell
-sbsign --key db.key --cert db.crt --output /boot/vmlinuz-linux /boot/vmlinuz-linux
-sbsign --key db.key --cert db.crt --output /efi/EFI/arch/grubx64.efi /efi/EFI/arch/grubx64.efi
-```
-
-##### Automatically sign bootloader and kernel on install and updates
-It is necessary to sign GRUB with your UEFI Secure Boot keys every time the system is updated via `pacman`. This can be accomplished with a [pacman hook](https://jlk.fjfi.cvut.cz/arch/manpages/man/alpm-hooks.5).
-
-Create the hooks directory
-```shell
-mkdir -p /etc/pacman.d/hooks
-```
-
-Create hooks for both the `linux` and `grub` packages
-
-```shell
-/etc/pacman.d/hooks/99-secureboot-linux.hook
-```
-```shell
-[Trigger]
-Operation = Install
-Operation = Upgrade
-Type = Package
-Target = linux
-
-[Action]
-Description = Signing Kernel for SecureBoot
-When = PostTransaction
-Exec = /usr/bin/find /boot/ -maxdepth 1 -name 'vmlinuz-*' -exec /usr/bin/sh -c 'if ! /usr/bin/sbverify --list {} 2>/dev/null | /usr/bin/grep -q "signature certificates"; then /usr/bin/sbsign --key /root/db.key --cert /root/db.crt --output {} {}; fi' \ ;
-Depends = sbsigntools
-Depends = findutils
-Depends = grep
-```
-
-```shell
-/etc/pacman.d/hooks/98-secureboot-grub.hook
-```
-```shell
-[Trigger]
-Operation = Install
-Operation = Upgrade
-Type = Package
-Target = grub
-
-[Action]
-Description = Signing GRUB for SecureBoot
-When = PostTransaction
-Exec = /usr/bin/find /efi/ -name 'grubx64*' -exec /usr/bin/sh -c 'if ! /usr/bin/sbverify --list {} 2>/dev/null | /usr/bin/grep -q "signature certificates"; then /usr/bin/sbsign --key /root/db.key --cert /root/db.crt --output {} {}; fi' \ ;
-Depends = sbsigntools
-Depends = findutils
-Depends = grep
-```
-
-#### Enroll keys in firmware
-##### Copy all `*.cer`, `*.esl`, `*.auth` to the EFI system partition
-```shell
-cp /root/*.cer /root/*.esl /root/*.auth /efi/
-```
-
-##### Boot into UEFI firmware setup utility (frequently but incorrectly referred to as "BIOS")
-```shell
-systemctl reboot --firmware
-```
-
-Firmwares have various different interfaces, see [Replacing Keys Using Your Firmware's Setup Utility](http://www.rodsbooks.com/efi-bootloaders/controlling-sb.html#setuputil) if the following instructions are unclear or unsuccessful.
-
-##### Set OS Type to `Windows UEFI mode`
-Find the Secure Boot options and set OS Type to `Windows UEFI mode` (yes, even if we're not on Windows.) This may be necessary for Secure Boot to function.
-
-##### Clear preloaded Secure Boot keys
-
-Using Key Management, clear all preloaded Secure Boot keys (Microsoft and OEM).
-
-By clearing all Secure Boot keys, you will enter into Setup Mode (so you can enroll your own Secure Boot keys).
-
-##### Set or append the new keys
-The keys must be set in the following order:
-
-```shell
-db => KEK => PK
-```
-
-This is due to some systems exiting setup mode as soon as a `PK` is entered.
-
-Do not load the factory defaults, instead navigate the available filesystems in search of the files previously copied to the EFI System partition.
-
-Choose any of the formats. The firmware should prompt you to enter the type (*Note:* type names may differ slightly.)
-```
-*.cer is a Public Key Certificate
-*.esl is a UEFI Secure Variable
-*.auth is an Authenticated Variable
-```
-
-Certain firmware (such as my own) require you use the *.auth files. Try various ones until they work.
-
-##### Set UEFI supervisor (administrator) password
-You must also set your UEFI firmware supervisor (administrator) password in the Security settings, so nobody can simply boot into UEFI setup utility and turn off Secure Boot.
-
-You should never use the same UEFI firmware supervisor password as your encryption password, because on some old laptops, the supervisor password could be recovered as plain text from the EEPROM chip.
-
-##### Exit and save changes
-Once you've loaded all three keys and set your supervisor password, hit F10 to exit and save your changes.
-
-If everything was done properly, your boot loader should appear on reboot.
-
-#### Check if Secure Boot was enabled
-```shell
-od -An -t u1 /sys/firmware/efi/efivars/SecureBoot-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-```
-The characters denoted by XXXX differ from machine to machine. To help with this, you can use tab completion or list the EFI variables.
-
-If Secure Boot is enabled, this command returns 1 as the final integer in a list of five, for example:
-
-```
-6  0  0  0  1
-```
-
-If Secure Boot was enabled and your UEFI supervisor password set, you may now consider yourself protected against Evil Maid attacks.
 
 ### Docker on BTRFS Storage Driver
 

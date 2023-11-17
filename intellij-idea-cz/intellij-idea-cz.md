@@ -48,7 +48,7 @@ modified: 2023-01-27T07:33:11.277Z
    * [Vestavěná podpora pro vývoj a nasazení kontejnerizovaných aplikací pomocí Dockeru](#vestavěná-podpora-pro-vývoj-a-nasazení-kontejnerizovaných-aplikací-pomocí-dockeru)
 * [Jiné světy](#jiné-světy)
 
-<!-- Added by: box, at: Thu Jun 15 12:44:46 PM CEST 2023 -->
+<!-- Added by: box, at: Fri Nov 17 07:38:07 PM CET 2023 -->
 
 <!--te-->
 

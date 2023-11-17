@@ -13,7 +13,7 @@ modified: 2023-06-15T10:34:34.072Z
    * [fzf search and history](#fzf-search-and-history)
    * [images](#images)
 
-<!-- Added by: box, at: Thu Jun 15 12:44:47 PM CEST 2023 -->
+<!-- Added by: box, at: Fri Nov 17 07:38:08 PM CET 2023 -->
 
 <!--te-->
 

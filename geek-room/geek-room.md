@@ -28,7 +28,7 @@ There are a list of following topics
    * [Distros](#distros)
    * [Games](#games)
 
-<!-- Added by: box, at: Thu Jun 15 12:44:45 PM CEST 2023 -->
+<!-- Added by: box, at: Fri Nov 17 07:38:05 PM CET 2023 -->
 
 <!--te-->
 

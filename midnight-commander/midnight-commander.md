@@ -22,7 +22,7 @@ modified: 2023-05-29T12:39:02.535Z
       * [Bash Integration](#bash-integration)
       * [Directory Hotlist](#directory-hotlist)
 
-<!-- Added by: box, at: Thu Jun 15 12:44:47 PM CEST 2023 -->
+<!-- Added by: box, at: Fri Nov 17 07:38:08 PM CET 2023 -->
 
 <!--te-->
 
