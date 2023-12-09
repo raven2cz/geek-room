@@ -1,8 +1,8 @@
 ---
 title: midnight-commander
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 created: 2023-05-24T12:18:30.780Z
-modified: 2023-05-29T12:39:02.535Z
+modified: 2023-11-23T18:06:53.439Z
 ---
 
 ![midnight-commander-logo](../attachments/midnight-commander-logo.png)
@@ -10,20 +10,6 @@ modified: 2023-05-29T12:39:02.535Z
 # midnight-commander
 
 <!--ts-->
-* [midnight-commander](#midnight-commander)
-* [Mastering Midnight Commander: A Comprehensive Guide for Novice Linux Users](#mastering-midnight-commander-a-comprehensive-guide-for-novice-linux-users)
-   * [Installing Midnight Commander on Arch Linux](#installing-midnight-commander-on-arch-linux)
-   * [Basic Configuration: Improve Look and Feel and Application Control](#basic-configuration-improve-look-and-feel-and-application-control)
-   * [Keybindings: Accelerate your Productivity](#keybindings-accelerate-your-productivity)
-   * [Tips and Tricks for Advanced Users](#tips-and-tricks-for-advanced-users)
-      * [Customize the Visual Appearance](#customize-the-visual-appearance)
-      * [Make Use of the Internal Editor and Viewer](#make-use-of-the-internal-editor-and-viewer)
-      * [Use Virtual File Systems](#use-virtual-file-systems)
-      * [Bash Integration](#bash-integration)
-      * [Directory Hotlist](#directory-hotlist)
-
-<!-- Added by: box, at: Fri Nov 17 07:38:08 PM CET 2023 -->
-
 <!--te-->
 
 # Mastering Midnight Commander: A Comprehensive Guide for Novice Linux Users

@@ -1,8 +1,8 @@
 ---
 title: arch-install-archinstall-luks-btrfs
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 created: 2022-12-03T11:15:00.872Z
-modified: 2022-12-03T11:16:13.094Z
+modified: 2023-11-23T18:06:53.440Z
 ---
 
 # arch-install-archinstall-luks-btrfs

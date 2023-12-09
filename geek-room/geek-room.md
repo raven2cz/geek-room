@@ -1,9 +1,9 @@
 ---
 title: geek-room
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2023-05-29T12:36:13.682Z
+modified: 2023-12-09T11:49:26.657Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -21,15 +21,6 @@ Individual topics will be gradually covered and YT videos will be uploaded and c
 There are a list of following topics
 
 <!--ts-->
-* [geek-room](#geek-room)
-   * [Technical](#technical)
-   * [Apps/Scripts](#appsscripts)
-   * [Shell Weekends](#shell-weekends)
-   * [Distros](#distros)
-   * [Games](#games)
-
-<!-- Added by: box, at: Fri Nov 17 07:38:05 PM CET 2023 -->
-
 <!--te-->
 
 ## Technical
@@ -59,6 +50,7 @@ There are a list of following topics
 * Mabox Dailydriver
 
 ## Games
+* [Steam, Proton and...Sims 4](games-steam-proton/games-steam-proton.md)
 * Minecraft Linux Basic Installation
 * Minecraft Advanced Addons Installation
 * Minecraft Survive

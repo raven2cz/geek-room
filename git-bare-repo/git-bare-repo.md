@@ -1,8 +1,8 @@
 ---
 title: git-bare-repo
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 created: 2022-08-17T14:48:58.578Z
-modified: 2022-09-03T19:05:38.979Z
+modified: 2023-11-23T18:06:53.439Z
 ---
 
 ![git-bare-repo-banner](../attachments/git-bare-repo-banner.png)
@@ -10,15 +10,6 @@ modified: 2022-09-03T19:05:38.979Z
 # git-bare-repo
 
 <!--ts-->
-* [git-bare-repo](#git-bare-repo)
-   * [What is a bare git repository?](#what-is-a-bare-git-repository)
-   * [Init your dotfiles for new station or station recovery](#init-your-dotfiles-for-new-station-or-station-recovery)
-   * [Next Game Level](#next-game-level)
-   * [Version Control for root files and system files](#version-control-for-root-files-and-system-files)
-   * [Conclusion](#conclusion)
-
-<!-- Added by: box, at: Fri Nov 17 07:38:05 PM CET 2023 -->
-
 <!--te-->
 
 ## What is a bare git repository?

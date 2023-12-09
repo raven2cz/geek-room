@@ -1,9 +1,9 @@
 ---
 title: pass-zx2c4
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 favorited: true
 created: 2022-10-30T08:26:09.163Z
-modified: 2022-11-06T07:59:16.196Z
+modified: 2023-11-23T18:06:53.439Z
 ---
 
 ![pass-zx2c4-banner](../attachments/pass-zx2c4-banner.png)
@@ -11,30 +11,6 @@ modified: 2022-11-06T07:59:16.196Z
 # pass-zx2c4
 
 <!--ts-->
-* [pass-zx2c4](#pass-zx2c4)
-   * [Links](#links)
-   * [Depends-On](#depends-on)
-   * [What is and isn't PASS?](#what-is-and-isnt-pass)
-      * [PASS is complicated! Just for geeks!](#pass-is-complicated-just-for-geeks)
-   * [GnuPG Basics](#gnupg-basics)
-   * [Pass Basics](#pass-basics)
-      * [Directory Hierarchy](#directory-hierarchy)
-      * [Syntax inside encrypted gpg file](#syntax-inside-encrypted-gpg-file)
-      * [Fundamental commands](#fundamental-commands)
-   * [Git Private Repo Integration](#git-private-repo-integration)
-      * [Server-side](#server-side)
-      * [Client-side](#client-side)
-      * [Pass New Station Installation Steps](#pass-new-station-installation-steps)
-   * [Rofi/dmenu Integration](#rofidmenu-integration)
-   * [passff - Firefox Integration](#passff---firefox-integration)
-   * [browserpass - Brave, Chromium, Firefox Integration](#browserpass---brave-chromium-firefox-integration)
-   * [Password Store, OpenKeychain - Android Integration](#password-store-openkeychain---android-integration)
-   * [Windows Integration - WSL2](#windows-integration---wsl2)
-   * [Next Apps and Possibilities](#next-apps-and-possibilities)
-   * [Pass - Credit &amp; License](#pass---credit--license)
-
-<!-- Added by: box, at: Fri Nov 17 07:38:05 PM CET 2023 -->
-
 <!--te-->
 
 ## Links

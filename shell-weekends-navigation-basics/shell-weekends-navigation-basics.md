@@ -1,20 +1,13 @@
 ---
 title: shell-weekends-navigation-basics
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 created: 2023-05-29T12:34:30.515Z
-modified: 2023-06-15T10:34:34.072Z
+modified: 2023-11-23T18:06:53.439Z
 ---
 
 # shell-weekends-navigation-basics
 
 <!--ts-->
-* [shell-weekends-navigation-basics](#shell-weekends-navigation-basics)
-   * [Basics](#basics)
-   * [fzf search and history](#fzf-search-and-history)
-   * [images](#images)
-
-<!-- Added by: box, at: Fri Nov 17 07:38:08 PM CET 2023 -->
-
 <!--te-->
 
 ## Basics

@@ -1,8 +1,8 @@
 ---
 title: intellij-idea
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 created: 2023-01-21T11:42:35.393Z
-modified: 2023-01-22T11:34:13.798Z
+modified: 2023-11-23T18:06:53.439Z
 ---
 
 ![intellij-idea-banner](../attachments/intellij-idea-banner.jpg)
@@ -10,18 +10,6 @@ modified: 2023-01-22T11:34:13.798Z
 # intellij-idea
 
 <!--ts-->
-* [intellij-idea](#intellij-idea)
-* [Intro](#intro)
-   * [Intellij IDEA](#intellij-idea-1)
-   * [JetBrains](#jetbrains)
-* [UI](#ui)
-* [Ergonomic (Mouseless)](#ergonomic-mouseless)
-* [Pro Tips](#pro-tips)
-   * [Built-in support for developing and deploying containerized applications using Docker](#built-in-support-for-developing-and-deploying-containerized-applications-using-docker)
-* [Another Worlds](#another-worlds)
-
-<!-- Added by: box, at: Fri Nov 17 07:38:07 PM CET 2023 -->
-
 <!--te-->
 
 # Intro

@@ -1,9 +1,9 @@
 ---
 title: intellij-idea-cz
 attachments: [Clipboard_2023-01-22-11-51-54.png]
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 created: 2023-01-21T18:20:11.215Z
-modified: 2023-01-27T07:33:11.277Z
+modified: 2023-11-23T18:06:53.439Z
 ---
 
 ![intellij-idea-banner](../attachments/intellij-idea-banner.jpg)
@@ -11,45 +11,6 @@ modified: 2023-01-27T07:33:11.277Z
 # intellij-idea-cz
 
 <!--ts-->
-* [intellij-idea-cz](#intellij-idea-cz)
-* [Intro](#intro)
-   * [Intellij IDEA](#intellij-idea)
-   * [JetBrains](#jetbrains)
-   * [Cíl článku](#cíl-článku)
-   * [Klávesové zkratky](#klávesové-zkratky)
-      * [Jak si zapamatovat velké množství zkratek?](#jak-si-zapamatovat-velké-množství-zkratek)
-   * [Intellij IDEA Dokumentace](#intellij-idea-dokumentace)
-* [UI Theme](#ui-theme)
-   * [NewUI JetBrains Theme](#newui-jetbrains-theme)
-      * [Ukázka přidávání důležitých widgetů](#ukázka-přidávání-důležitých-widgetů)
-   * [Monokai Pro](#monokai-pro)
-   * [Dracula Theme](#dracula-theme)
-* [Ergonomic Keybindings (Mouseless)](#ergonomic-keybindings-mouseless)
-   * [Mouseless přístup](#mouseless-přístup)
-   * [Navigace](#navigace)
-      * [Bookmark navigace (RTS přístup)](#bookmark-navigace-rts-přístup)
-   * [Čtení kódu](#čtení-kódu)
-   * [Debug](#debug)
-      * [Remote Debug](#remote-debug)
-   * [Psaní kódu](#psaní-kódu)
-   * [Práce s editorem](#práce-s-editorem)
-   * [Refactoring](#refactoring)
-   * [Plugins](#plugins)
-* [Pro Tips](#pro-tips)
-   * [Code analysis](#code-analysis)
-      * [Dependency Structure Matrix](#dependency-structure-matrix)
-      * [Structural search and replace](#structural-search-and-replace)
-   * [Compare](#compare)
-      * [Compare with Clipboard](#compare-with-clipboard)
-   * [Multi-selection](#multi-selection)
-   * [Regex](#regex)
-   * [Run Tests with Coverage](#run-tests-with-coverage)
-   * [In-Build Profiler (Ultimate Edition)](#in-build-profiler-ultimate-edition)
-   * [Vestavěná podpora pro vývoj a nasazení kontejnerizovaných aplikací pomocí Dockeru](#vestavěná-podpora-pro-vývoj-a-nasazení-kontejnerizovaných-aplikací-pomocí-dockeru)
-* [Jiné světy](#jiné-světy)
-
-<!-- Added by: box, at: Fri Nov 17 07:38:07 PM CET 2023 -->
-
 <!--te-->
 
 # Intro

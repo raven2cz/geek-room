@@ -1,9 +1,9 @@
 ---
 title: arch-install-awesomewm
-tags: [Notebooks/Geek Room]
+tags: [Notebooks/Geek_Room]
 favorited: true
 created: 2022-12-02T08:58:10.438Z
-modified: 2022-12-04T12:34:45.767Z
+modified: 2023-11-23T18:06:53.440Z
 ---
 
 # arch-install-awesomewm
