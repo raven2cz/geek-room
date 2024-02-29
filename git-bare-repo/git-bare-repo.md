@@ -10,6 +10,11 @@ modified: 2023-11-23T18:06:53.439Z
 # git-bare-repo
 
 <!--ts-->
+
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: box, at: Thu Feb 29 12:01:13 PM CET 2024 -->
+
 <!--te-->
 
 ## What is a bare git repository?
