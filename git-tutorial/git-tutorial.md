@@ -2,7 +2,7 @@
 title: git-tutorial
 tags: [Notebooks/Geek_Room]
 created: 2024-02-27T12:46:22.754Z
-modified: 2024-02-29T11:11:57.088Z
+modified: 2024-02-29T14:49:30.499Z
 ---
 
 ![git-tutorial-banner](../attachments/git-tutorial-banner.webp)
@@ -13,7 +13,7 @@ modified: 2024-02-29T11:11:57.088Z
 
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:12:49 PM CET 2024 -->
+<!-- Added by: box, at: Thu Feb 29 03:49:54 PM CET 2024 -->
 
 <!--te-->
 
@@ -26,6 +26,8 @@ modified: 2024-02-29T11:11:57.088Z
   - **Bezpečnost**: Změny kódu jsou sledovatelné a reverzibilní.
   - **Flexibilita**: Práce s více verzemi projektu současně.
   - **Spolupráce**: Umožňuje týmům efektivně spolupracovat na jednom projektu.
+
+![git-tutorial-label](../attachments/git-tutorial-label.png)
 
 ## Git je komplexní nástroj
 - Všechny cesty vedou do Říma. 
