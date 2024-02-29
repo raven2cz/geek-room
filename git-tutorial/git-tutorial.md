@@ -2,7 +2,7 @@
 title: git-tutorial
 tags: [Notebooks/Geek_Room]
 created: 2024-02-27T12:46:22.754Z
-modified: 2024-02-29T10:51:35.389Z
+modified: 2024-02-29T11:11:57.088Z
 ---
 
 ![git-tutorial-banner](../attachments/git-tutorial-banner.webp)
@@ -13,7 +13,7 @@ modified: 2024-02-29T10:51:35.389Z
 
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:16 PM CET 2024 -->
+<!-- Added by: box, at: Thu Feb 29 12:12:49 PM CET 2024 -->
 
 <!--te-->
 
@@ -51,20 +51,20 @@ Instalace Gitu na Linuxu se obvykle provádí prostřednictvím správce balíč
 
 #### Debian/Ubuntu
 
-```sh
+```shell
 sudo apt-get update
 sudo apt-get install git
 ```
 
 #### Fedora
 
-```sh
+```shell
 sudo dnf install git
 ```
 
 #### Arch Linux
 
-```sh
+```shell
 sudo pacman -S git
 ```
 
@@ -74,13 +74,13 @@ Pro ověření instalace zadejte `git --version`.
 
 1. **Použití Homebrew**: Nejjednodušší způsob, jak nainstalovat Git na macOS, je použít Homebrew, což je správce balíčků pro macOS. Pokud ještě nemáte nainstalovaný Homebrew, můžete jej nainstalovat spuštěním následujícího příkazu v Terminálu:
 
-   ```sh
+   ```shell
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
    ```
 
    Poté nainstalujte Git pomocí Homebrew:
 
-   ```sh
+   ```shell
    brew install git
    ```
 
@@ -89,7 +89,7 @@ Pro ověření instalace zadejte `git --version`.
 ## Konfigurace Gitu
   - Nastavení uživatelského jména a e-mailu:
 
-  ```bash
+  ```shell
    git config --global user.name "Vaše Jméno"
    git config --global user.email "vas_email@example.com"
    ```
@@ -97,12 +97,12 @@ Pro ověření instalace zadejte `git --version`.
 - **Ukázka konfiguračního souboru `~/.gitconfig`**
 ```ini
 [user]
-	name = full name
+  name = full name
   email = email@example.com
 [pull]
   rebase = true
 [push]
-	default = current
+  default = current
 [alias]
   ls-subtrees = !"for i in $(git log | grep git-subtree-dir | sed -e 's/^.*: //g' | sort | uniq); do test -d $i && echo $i; done"
   ci = commit
@@ -126,21 +126,21 @@ Pro ověření instalace zadejte `git --version`.
   rbw = rebase work
   cow = checkout work
   com = checkout main
-	lg = log --graph
-	fet = fetch
-	f = fetch
-	difff = diff
-	di = diff
-	rbom = rebase origin/main
-	dsf = "!git diff --color $@ | diff-so-fancy"
+  lg = log --graph
+  fet = fetch
+  f = fetch
+  difff = diff
+  di = diff
+  rbom = rebase origin/main
+  dsf = "!git diff --color $@ | diff-so-fancy"
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [http]
-	sslBackend = openssl
+  sslBackend = openssl
 [credential]
-	helper = cache
+  helper = cache
 [merge]
-	tool = meld
+  tool = meld
 ```
 
 ## Základní pojmy
@@ -183,16 +183,16 @@ Pokračujeme s druhou částí tutoriálu, která se zaměřuje na "Práci s rep
   - Ukázka vytvoření repozitáře přímo na GitHubu nebo Gitlabu.
   - Inicializace nového repozitáře v existujícím adresáři:
 
-  ```bash
+  ```shell
   git init
   ```
 
 - **Klonování repozitáře**:
   - Klonování existujícího repozitáře z GitHubu nebo jiného vzdáleného serveru:
 
-  ```bash
+  ```shell
   git clone https://github.com/uzivatel/repozitar.git
-	git clone git@github.com:raven2cz/dotfiles.git .dotfiles
+  git clone git@github.com:raven2cz/dotfiles.git .dotfiles
   ```
 
 ## Základní operace: add, commit, push, pull
@@ -200,41 +200,41 @@ Pokračujeme s druhou částí tutoriálu, která se zaměřuje na "Práci s rep
 - **Přidání souborů** (`git add`):
   - Přidání jednoho souboru do stage area:
 
-    ```bash
+    ```shell
     git add soubor.txt
     ```
   - Přidání všech změněných souborů do stage area:
 
-    ```bash
+    ```shell
     git add .
     ```
 - **Vytvoření commitu** (`git commit`):
   - Vytvoření commitu s popisnou zprávou:
 
-    ```bash
-		git status # prohlédnutí plánovaných změn ve stage area
-		git diff # procházení svých změn
+    ```shell
+    git status # prohlédnutí plánovaných změn ve stage area
+    git diff # procházení svých změn
 
     git commit -m "Popis změn"
 
-		git diff --staged # procházení změn ve staged
-		git log --oneline # git logu per jedna řádka
-		git reset --soft HEAD~1 # zrušení posledního commitu a návrat změn do stavu před commitem
+    git diff --staged # procházení změn ve staged
+    git log --oneline # git logu per jedna řádka
+    git reset --soft HEAD~1 # zrušení posledního commitu a návrat změn do stavu před commitem
 
 - **Odeslání změn** (`git push`):
   - Odeslání lokálních změn na vzdálený server (např. GitHub):
 
-    ```bash
+    ```shell
     git push origin main
-		git push
+    git push
     ```
 
 - **Aktualizace lokálního repozitáře** (`git pull`):
   - Stáhnutí změn z vzdáleného repozitáře:
 
-    ```bash
+    ```shell
     git pull origin main
-		git pull
+    git pull
     ```
 
 ## Práce s větvemi (branching) a základy merging
@@ -246,27 +246,27 @@ Pokračujeme s druhou částí tutoriálu, která se zaměřuje na "Práci s rep
 - **Vytvoření nové větve a práce ve větvi**:
   - Jak vytvořit a přepnout do nové větve:
 
-    ```bash
+    ```shell
     git branch nova-vetev # nová branch, bez názvu vypíše lokální branches
     git checkout nova-vetev # přepínání branches
 
-		git checkout -b nova-vetev # jednořádková varianta
-		# provést implementační změny...
-		git add --all # všechny změny do staged area
-		git add -u # přidat změny pouze souborů, které již byly součástí git repa
-		git commit -m "feature/name popis feature"
-		git push -u origin nova-vetev # první push do větve, která v origin ještě neexistuje
+    git checkout -b nova-vetev # jednořádková varianta
+    # provést implementační změny...
+    git add --all # všechny změny do staged area
+    git add -u # přidat změny pouze souborů, které již byly součástí git repa
+    git commit -m "feature/name popis feature"
+    git push -u origin nova-vetev # první push do větve, která v origin ještě neexistuje
     ```
 
 - **Merging**:
   - Sloučení změn z jedné větve do druhé. Toto většinou pro main branch nikdy neuvidíte, neboť je součásti MR/PR, o kterých si budeme říkat později.
 
-    ```bash
+    ```shell
     git checkout main
-		git pull
+    git pull
     git merge nova-vetev
-		git rebase nova-vetev # rebase varianta sloučení (častěji používáno)
-		git branch -d nova-vetev # pozor pouze lokální odstranění branche
+    git rebase nova-vetev # rebase varianta sloučení (častěji používáno)
+    git branch -d nova-vetev # pozor pouze lokální odstranění branche
     ```
 
 ## Připojení existujícího projektu a jeho push do nového git repa
@@ -298,12 +298,12 @@ Nyní se podíváme na třetí část tutoriálu, která se zaměří na "Pokro�
   - Použití editoru v IDE nebo nástrojů pro vizuální srovnání k ručnímu vyřešení konfliktů. Například `meld`.
   - Závěrečné commitování řešení konfliktu:
 
-    ```bash
-		git mergetool # (pokud jsou konflikty, nutno vsechny poresit, dokud nebude vse zelene, mozno spoustet testy, checks, vymazat zalohy)
+    ```shell
+    git mergetool # (pokud jsou konflikty, nutno vsechny poresit, dokud nebude vse zelene, mozno spoustet testy, checks, vymazat zalohy)
     git add --all # (pokud se delaji jeste opravy po mergovani, neco nefungovalo apod. Nutno ale jiz vymazat backups.)
     git status
-		git rebase --continue # (dokonci rebase, UDELA COMMITY, hlavne ted nedelat git pull!)
-		git push -f # (nutno provest force, protoze zmeny v usporadani commitu!)
+    git rebase --continue # (dokonci rebase, UDELA COMMITY, hlavne ted nedelat git pull!)
+    git push -f # (nutno provest force, protoze zmeny v usporadani commitu!)
     ```
 
 ## Rebase vs. merge
@@ -324,14 +324,14 @@ Obě operace, `rebase` a `merge`, jsou způsoby, jak integrovat změny z jedné 
 
 Rebase je užitečný pro čištění historie commitů a eliminaci nepotřebných merge commitů. Například, pokud pracujete na feature větvi a chcete ji aktualizovat s nejnovějšími změnami z `main` (nebo `develop`) větve, můžete použít:
 
-```bash
+```shell
 git checkout feature-branch
 git rebase main
 ```
 
 Tím se změny z `main` vloží pod vaše změny z `feature-branch`, což vytvoří čistou, lineární historii. Po dokončení rebase může být potřeba změny *force-pushovat* do vzdáleného repozitáře (pokud jste již změny pushovali před rebase), použijte s opatrností:
 
-```bash
+```shell
 git push origin feature-branch --force
 ```
 
@@ -340,6 +340,7 @@ git push origin feature-branch --force
 Vždy je důležité zvážit kontext a týmové workflow při rozhodování, zda použít rebase nebo merge, aby byla spolupráce co nejeffektivnější a nejpříjemnější pro všechny zúčastněné.
 
 ## Zacházení s Feature Branches - branch pro jednoho vývojáře!
+
 ```shell
 git checkout main
 git pull
@@ -364,7 +365,7 @@ git fetch --tags --prune --prune-tags
 
 - **Vytvoření tagů**:
   - Použití tagů pro označení významných bodů v historii projektu, např. release projektu:
-    ```bash
+    ```shell
     git tag -a v1.0.0 -m "Project v1.0.0 released."
     git push origin --tags
     ```
@@ -422,18 +423,21 @@ Přecházíme k čtvrté části tutoriálu, která se bude věnovat "Práci se 
 ## Základy remote repozitářů
 
 ### Přidání vzdáleného repozitáře
+
   - Jak přidat vzdálený repozitář (remote):
-    ```bash
+    ```shell
     git remote add origin https://github.com/uzivatel/repozitar.git
     ```
-		
+    
 ### Zobrazení vzdálených repozitářů
+
   - Příkaz pro zobrazení seznamu vzdálených repozitářů:
-    ```bash
+    ```shell
     git remote -v
     ```
 
 ### Změna remote repository pro váš projekt
+
 ```shell
 git remote -v # vypíše aktuální mapování na remote server
 git remote set-url origin git@server.org:user/repo.git # připojení nového mapování
@@ -483,8 +487,8 @@ a vypíšeme si výchozí seznam _remote_ repozitory:
 
 ```shell
 $ git remote -v
-origin	git@github.com:sw-samuraj/terratest.git (fetch)
-origin	git@github.com:sw-samuraj/terratest.git (push)
+origin  git@github.com:sw-samuraj/terratest.git (fetch)
+origin  git@github.com:sw-samuraj/terratest.git (push)
 ```
 
 #### Přidání původního repozitory
@@ -502,10 +506,10 @@ Opět si vypíšeme seznam _remote_ repozitory a vidíme, že máme dvě:
 
 ```shell
 $ git remote -v
-origin	git@github.com:sw-samuraj/terratest.git (fetch)
-origin	git@github.com:sw-samuraj/terratest.git (push)
-upstream	git@github.com:gruntwork-io/terratest.git (fetch)
-upstream	git@github.com:gruntwork-io/terratest.git (push)
+origin  git@github.com:sw-samuraj/terratest.git (fetch)
+origin  git@github.com:sw-samuraj/terratest.git (push)
+upstream  git@github.com:gruntwork-io/terratest.git (fetch)
+upstream  git@github.com:gruntwork-io/terratest.git (push)
 ```
 
 #### Stažení změn z původního repozitory
@@ -590,14 +594,14 @@ Stashing je užitečný, když potřebujete rychle přepnout kontext mezi větve
 
 1. **Uložení změn do stash**:
    - Pro uložení vašich změn do dočasného úložiště použijte:
-     ```bash
+     ```shell
      git stash # tím se aktuální změny uloží do stash a pracovní adresář se vrátí do posledního commitu
-		 git pull --autostash # v případě dostat nové repo změny, ale mám na disku rozdělanou práci
+     git pull --autostash # v případě dostat nové repo změny, ale mám na disku rozdělanou práci
      ```
 
 2. **Aplikování změn ze stash**:
    - Pro aplikování změn uložených ve stash na aktuální větev použijte:
-     ```bash
+     ```shell
      git stash pop
      ```
    - Tento příkaz znovu aplikuje změny a odstraní je ze stash.
@@ -610,14 +614,14 @@ Reflog sleduje změny v referencích v lokálním repozitáři, což umožňuje 
 
 1. **Zobrazení reflogu**:
    - Pro zobrazení historie referencí použijte:
-     ```bash
+     ```shell
      git reflog
      ```
    - Zde můžete najít ID commitu, ke kterému se chcete vrátit.
 
 2. **Obnovení pomocí reflogu**:
    - Pro obnovení na určitý commit z reflogu použijte:
-     ```bash
+     ```shell
      git reset --hard HEAD@{index}
      ```
    - Nahraďte `{index}` číslem commitu z reflogu.
@@ -702,18 +706,18 @@ SSH klíče umožňují bezpečnou komunikaci mezi vaším počítačem a Git se
 
 1. **Generování SSH klíče**:
    - Otevřete terminál a zadejte následující příkaz pro generování nového SSH klíče, nahradit `email@example.com` vaším e-mailem:
-     ```bash
+     ```shell
      ssh-keygen -t rsa -b 4096 -C "email@example.com"
      ```
    - Během procesu můžete nastavit heslo pro dodatečnou bezpečnost.
 
 2. **Přidání SSH klíče do ssh-agenta**:
    - Spusťte ssh-agent v pozadí:
-     ```bash
+     ```shell
      eval "$(ssh-agent -s)"
      ```
    - Přidejte váš SSH klíč do ssh-agenta:
-     ```bash
+     ```shell
      ssh-add ~/.ssh/id_rsa
      ```
 
@@ -791,16 +795,16 @@ Tato kapitola se zaměří na praktické scénáře použití Gitu, nejlepší p
 
 1. **Práce na nové funkci**: Pro práci na nové funkci využijte *feature branches*. To vám umožní izolovat vývoj nové funkce od hlavní vývojové linie (`main` nebo `develop`), což usnadňuje code review a integraci.
    
-   ```bash
+   ```shell
    git checkout -b feature/nova-funkce
-	 git checkout -b user/feature
+   git checkout -b user/feature
    ```
 
 2. **Oprava chyb**: Pro opravy chyb použijte *hotfix branches*, které vám umožní rychle opravit chyby v produkčním kódu a snadno je nasadit.
    
-   ```bash
+   ```shell
    git checkout -b hotfix/oprava-chyby
-	 git checkout -b user/hotfix
+   git checkout -b user/hotfix
    ```
 
 3. **Spolupráce na projektu**: Pro efektivní spolupráci využijte *forking workflow* nebo *feature branch workflow* s pull requesty, což umožňuje diskuzi o změnách a revizi kódu před sloučením.
