@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek_Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2024-02-29T10:55:43.084Z
+modified: 2024-03-08T06:46:07.394Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -24,13 +24,13 @@ There are a list of following topics
 
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:12 PM CET 2024 -->
+<!-- Added by: box, at: Fri Mar  8 07:54:56 AM CET 2024 -->
 
 <!--te-->
 
 ## Technical
 
-* [Git Basic2Advanced Tutorial](git-tutorial/git-tutorial.md)
+* [Git Basic2Advanced Tutorial](git-tutorial/git-tutorial.md) / [Git Basic2Advanced Tutorial (EN)](git-tutorial/git-tutorial-en.md)
 * [Git Bare Repository for Dotfiles](git-bare-repo/git-bare-repo.md)
 * [Pass, gpg, passff, rofi-pass, password store, OpenKeyChain](pass-zx2c4/pass-zx2c4.md)
 * [Intellij IDEA (cz)](intellij-idea-cz/intellij-idea-cz.md)
