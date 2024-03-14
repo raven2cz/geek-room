@@ -2,7 +2,7 @@
 title: git-tutorial
 tags: [Notebooks/Geek_Room]
 created: 2024-02-27T12:46:22.754Z
-modified: 2024-03-14T06:46:51.646Z
+modified: 2024-03-14T07:51:39.980Z
 ---
 
 ![git-tutorial-banner](../attachments/git-tutorial-banner.webp)
@@ -13,7 +13,7 @@ modified: 2024-03-14T06:46:51.646Z
 
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Mar 14 08:16:06 AM CET 2024 -->
+<!-- Added by: box, at: Thu Mar 14 08:53:20 AM CET 2024 -->
 
 <!--te-->
 
@@ -360,7 +360,7 @@ git push -f # (nutno provest force, protoze zmeny v usporadani commitu)
 git status # (ted by jiz melo psat, ze je vse up-to-date, overit v merge request, zda je vsechno ok)
 ```
 
-## Jak synchronizovat branches, ktere byly zmazany remote a zustaly na locale?
+## Jak synchronizovat branches, které byly smazány remote a zůstaly na locale?
 ```shell
 git fetch --tags --prune --prune-tags
 ```
