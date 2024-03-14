@@ -2,7 +2,7 @@
 title: git-tutorial
 tags: [Notebooks/Geek_Room]
 created: 2024-02-27T12:46:22.754Z
-modified: 2024-02-29T14:49:30.499Z
+modified: 2024-03-14T06:46:51.646Z
 ---
 
 ![git-tutorial-banner](../attachments/git-tutorial-banner.webp)
@@ -13,7 +13,7 @@ modified: 2024-02-29T14:49:30.499Z
 
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 03:49:54 PM CET 2024 -->
+<!-- Added by: box, at: Thu Mar 14 08:16:06 AM CET 2024 -->
 
 <!--te-->
 
@@ -314,6 +314,8 @@ Obě operace, `rebase` a `merge`, jsou způsoby, jak integrovat změny z jedné 
 
 ### Rozdíly mezi rebase a merge
 
+![git-tutorial-merge-vs-rebase](../attachments/git-tutorial-merge-vs-rebase.jpg)
+
 - **Merge**:
   - **Operace merge** bere změny z jedné větve (`feature branch`) a integruje je do jiné větve (`main` nebo `develop`), přičemž vytváří nový *merge commit*. Tento commit má dva rodiče, kterými jsou poslední commity obou sloučených větví.
   - **Kdy použít**: Merge je vhodný, když chcete zachovat kompletní historii a kontext vývoje. Je to standardní způsob, jak začleňovat dokončené funkce nebo opravy do hlavní větve, přičemž je zřetelně označena jako samostatná cesta vývoje.
@@ -365,14 +367,16 @@ git fetch --tags --prune --prune-tags
 
 ## Tagging a využití pro versioning
 
-- **Vytvoření tagů**:
-  - Použití tagů pro označení významných bodů v historii projektu, např. release projektu:
-    ```shell
-    git tag -a v1.0.0 -m "Project v1.0.0 released."
-    git push origin --tags
-    ```
+**Vytvoření tagů**:
+  Použití tagů pro označení významných bodů v historii projektu, např. release projektu:
+
+```shell
+git tag -a v1.0.0 -m "Project v1.0.0 released."
+git push origin --tags
+```
 
 ### Revert změn aktuálního repositáře
+
 ```shell
 git checkout -- . # starší příkaz, více účelný
 git restore .  # novější příkaz určený pro obnovu zvolených souborů
@@ -535,7 +539,7 @@ Je jen na vás, jestli vaše změny uděláte před nebo po merge z upstream rep
 #### RESET fork to origin (for example awesomeWM)
 
 ```shell
-git remote add upstream [git@github.com:awesomeWM/awesome.git](git@github.com:awesomeWM/awesome.git)
+git remote add upstream git@github.com:awesomeWM/awesome.git
 
 git fetch upstream
 git checkout master

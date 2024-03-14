@@ -2,7 +2,7 @@
 title: git-tutorial-en
 tags: [Notebooks/Geek_Room]
 created: 2024-03-08T06:01:27.369Z
-modified: 2024-03-08T06:51:31.975Z
+modified: 2024-03-14T07:15:42.174Z
 ---
 
 ![git-tutorial-banner](../attachments/git-tutorial-banner.webp)
@@ -13,7 +13,7 @@ modified: 2024-03-08T06:51:31.975Z
 
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Fri Mar  8 07:55:17 AM CET 2024 -->
+<!-- Added by: box, at: Thu Mar 14 08:16:07 AM CET 2024 -->
 
 <!--te-->
 
@@ -314,6 +314,8 @@ Both operations, `rebase` and `merge`, are ways to integrate changes from one Gi
 
 ### Differences Between Rebase and Merge
 
+![git-tutorial-merge-vs-rebase](../attachments/git-tutorial-merge-vs-rebase.jpg)
+
 - **Merge**:
   - **Merge operation** takes changes from one branch (`feature branch`) and integrates them into another branch (`main` or `develop`), creating a new *merge commit*. This commit has two parents, which are the last commits of both merged branches.
   - **When to use**: Merge is suitable when you want to preserve the complete history and context of development. It's the standard way to incorporate completed features or fixes into the main branch, clearly marking it as a separate development path.
@@ -363,20 +365,24 @@ is up-to-date, verify in merge request that everything is okay)
 ```
 
 ## How to Synchronize Branches That Were Deleted Remotely but Remain Locally?
+
 ```shell
 git fetch --tags --prune --prune-tags
 ```
 
 ## Tagging and Its Use for Versioning
 
-- **Creating Tags**:
-  - Using tags to mark significant points in the project's history, e.g., project releases:
-    ```shell
-    git tag -a v1.0.0 -m "Project v1.0.0 released."
-    git push origin --tags
-    ```
+**Creating Tags**:
+
+Using tags to mark significant points in the project's history, e.g., project releases:
+
+```shell
+git tag -a v1.0.0 -m "Project v1.0.0 released."
+git push origin --tags
+```
 
 ### Reverting Changes in the Current Repository
+
 ```shell
 git checkout -- . # older command, more practical
 git restore .  # newer command designed to restore chosen files
