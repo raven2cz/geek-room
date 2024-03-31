@@ -3,7 +3,7 @@ title: geek-room
 tags: [Notebooks/Geek_Room]
 pinned: true
 created: 2022-08-18T18:54:30.964Z
-modified: 2024-03-08T06:57:10.229Z
+modified: 2024-03-31T07:36:12.687Z
 ---
 
 ![geek-room-banner](attachments/geek-room-banner.png)
@@ -21,10 +21,16 @@ Individual topics will be gradually covered and YT videos will be uploaded and c
 There are a list of following topics
 
 <!--ts-->
-
+* [geek-room](#geek-room)
+   * [Technical](#technical)
+   * [Apps/Scripts](#appsscripts)
+   * [Shell Weekends](#shell-weekends)
+   * [Distros](#distros)
+   * [Games](#games)
+   * [Siren (AI)](#siren-ai)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Fri Mar  8 07:57:29 AM CET 2024 -->
+<!-- Added by: box, at: Sun Mar 31 09:40:18 AM CEST 2024 -->
 
 <!--te-->
 
@@ -61,3 +67,5 @@ There are a list of following topics
 * Minecraft Advanced Addons Installation
 * Minecraft Survive
 
+## Siren (AI)
+* [Siren Specification](siren/siren.md) / [Siren CZ Version](siren-cz/siren-cz.md)
