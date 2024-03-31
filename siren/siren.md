@@ -1,18 +1,14 @@
 ---
 title: siren
+attachments: [siren-banner.png]
 tags: [Notebooks/Geek_Room]
 created: 2024-03-31T07:34:02.122Z
-modified: 2024-03-31T07:43:00.948Z
+modified: 2024-03-31T07:52:45.642Z
 ---
 
 # siren
 
-<div style="display: grid; grid-template-columns: repeat(2, minmax(auto, 500px)); grid-gap: 0px; width: 100%;">
-    <img src="../attachments/siren-2.png" alt="Obrázek 1" style="width: 100%; height: auto;">
-    <img src="../attachments/siren-3.png" alt="Obrázek 2" style="width: 100%; height: auto;">
-    <img src="../attachments/siren-4.png" alt="Obrázek 3" style="width: 100%; height: auto;">
-    <img src="../attachments/siren-5.png" alt="Obrázek 4" style="width: 100%; height: auto;">
-</div>
+![](../attachments/siren-banner.png)
 
 # Project Siren: Specification
 

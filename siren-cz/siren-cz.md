@@ -3,17 +3,12 @@ title: siren-cz
 attachments: [siren-2.png, siren-3.png, siren-4.png, siren-5.png]
 tags: [Notebooks/Geek_Room]
 created: 2024-03-31T05:55:34.165Z
-modified: 2024-03-31T07:43:12.517Z
+modified: 2024-03-31T07:53:23.282Z
 ---
 
 # siren-cz
 
-<div style="display: grid; grid-template-columns: repeat(2, minmax(auto, 500px)); grid-gap: 0px; width: 100%;">
-    <img src="../attachments/siren-2.png" alt="Obrázek 1" style="width: 100%; height: auto;">
-    <img src="../attachments/siren-3.png" alt="Obrázek 2" style="width: 100%; height: auto;">
-    <img src="../attachments/siren-4.png" alt="Obrázek 3" style="width: 100%; height: auto;">
-    <img src="../attachments/siren-5.png" alt="Obrázek 4" style="width: 100%; height: auto;">
-</div>
+![](../attachments/siren-banner.png)
 
 # Projekt Siréna (Siren) - Specifikace
 
@@ -58,3 +53,12 @@ Bezpečnostní opatření a authentikační modul zajistí, že kritické operac
 ## Závěr
 
 Projekt Siren přináší vizi pokročilé AI, která je nejen schopna autonomního lokálního zpracování, ale také se integruje s cloudovými službami pro rozšířené analýzy a úkoly. S flexibilitou v tvorbě a spouštění skriptů, rozšířenou interaktivitou a důrazem na bezpečnost, Siren slibuje revoluční přístup k osobní a profesionální produktivitě.
+
+# Design
+
+<div style="display: grid; grid-template-columns: repeat(2, minmax(auto, 500px)); grid-gap: 0px; width: 100%;">
+    <img src="../attachments/siren-2.png" alt="Obrázek 1" style="width: 100%; height: auto;">
+    <img src="../attachments/siren-3.png" alt="Obrázek 2" style="width: 100%; height: auto;">
+    <img src="../attachments/siren-4.png" alt="Obrázek 3" style="width: 100%; height: auto;">
+    <img src="../attachments/siren-5.png" alt="Obrázek 4" style="width: 100%; height: auto;">
+</div>
