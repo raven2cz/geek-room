@@ -10,8 +10,18 @@ moc: "[[_geek-room]]"
 ![git-bare-repo-banner](../attachments/git-bare-repo-banner.png)
 
 # git-bare-repo
-```table-of-contents
-```
+<!--ts-->
+* [git-bare-repo](#git-bare-repo)
+   * [What is a bare git repository?](#what-is-a-bare-git-repository)
+   * [Init your dotfiles for new station or station recovery](#init-your-dotfiles-for-new-station-or-station-recovery)
+   * [Next Game Level](#next-game-level)
+   * [Version Control for root files and system files](#version-control-for-root-files-and-system-files)
+   * [Conclusion](#conclusion)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: box, at: Sat Jun  7 10:17:35 AM CEST 2025 -->
+
+<!--te-->
 ## What is a bare git repository?
 
 For full description, please refer this [article from Jon Saints](https://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/).

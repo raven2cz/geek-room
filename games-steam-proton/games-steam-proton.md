@@ -10,8 +10,42 @@ moc: "[[_geek-room]]"
 
 # games-steam-proton
 
-```table-of-contents
-```
+<!--ts-->
+* [games-steam-proton](#games-steam-proton)
+   * [Games on Linux](#games-on-linux)
+   * [Important Links](#important-links)
+      * [List of Games](#list-of-games)
+      * [Gaming Documentation](#gaming-documentation)
+      * [CachyOS Gaming](#cachyos-gaming)
+      * [CachyOS Profiles](#cachyos-profiles)
+   * [Steam &amp; Proton...Sims4](#steam--protonsims4)
+      * [Step 1: System Preparation](#step-1-system-preparation)
+      * [Step 2: Installing Steam](#step-2-installing-steam)
+      * [Step 3: Activating Proton in Steam](#step-3-activating-proton-in-steam)
+      * [Step 4: Installing Graphics Drivers and Choosing a Profile](#step-4-installing-graphics-drivers-and-choosing-a-profile)
+      * [Step 5: Installing and Launching Sims 4](#step-5-installing-and-launching-sims-4)
+      * [Step 6: Troubleshooting Common Issues](#step-6-troubleshooting-common-issues)
+   * [Summary](#summary)
+* [Český originál článku](#český-originál-článku)
+   * [Hry na Linuxu](#hry-na-linuxu)
+   * [Důležité odkazy](#důležité-odkazy)
+      * [Seznam her](#seznam-her)
+      * [Herní dokumentace](#herní-dokumentace)
+      * [CachyOS Gaming](#cachyos-gaming-1)
+      * [CachyOS Profily](#cachyos-profily)
+   * [Steam &amp; Proton...Sims4](#steam--protonsims4-1)
+      * [Krok 1: Příprava Systému](#krok-1-příprava-systému)
+      * [Krok 2: Instalace Steamu](#krok-2-instalace-steamu)
+      * [Krok 3: Aktivace Protonu v Steamu](#krok-3-aktivace-protonu-v-steamu)
+      * [Krok 4: Instalace Grafických Ovladačů a Výběr Profilu](#krok-4-instalace-grafických-ovladačů-a-výběr-profilu)
+      * [Krok 5: Instalace a Spuštění Sims 4](#krok-5-instalace-a-spuštění-sims-4)
+      * [Krok 6: Řešení Běžných Problémů](#krok-6-řešení-běžných-problémů)
+      * [Shrnutí](#shrnutí)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: box, at: Sat Jun  7 10:17:39 AM CEST 2025 -->
+
+<!--te-->
 
 ## Games on Linux
 

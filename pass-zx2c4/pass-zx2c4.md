@@ -9,8 +9,33 @@ moc: "[[_geek-room]]"
 
 ![pass-zx2c4-banner](../attachments/pass-zx2c4-banner.png)
 # pass-zx2c4
-```table-of-contents
-```
+<!--ts-->
+* [pass-zx2c4](#pass-zx2c4)
+   * [Links](#links)
+   * [Depends-On](#depends-on)
+   * [What is and isn't PASS?](#what-is-and-isnt-pass)
+      * [PASS is complicated! Just for geeks!](#pass-is-complicated-just-for-geeks)
+   * [GnuPG Basics](#gnupg-basics)
+   * [Pass Basics](#pass-basics)
+      * [Directory Hierarchy](#directory-hierarchy)
+      * [Syntax inside encrypted gpg file](#syntax-inside-encrypted-gpg-file)
+      * [Fundamental commands](#fundamental-commands)
+   * [Git Private Repo Integration](#git-private-repo-integration)
+      * [Server-side](#server-side)
+      * [Client-side](#client-side)
+      * [Pass New Station Installation Steps](#pass-new-station-installation-steps)
+   * [Rofi/dmenu Integration](#rofidmenu-integration)
+   * [passff - Firefox Integration](#passff---firefox-integration)
+   * [browserpass - Brave, Chromium, Firefox Integration](#browserpass---brave-chromium-firefox-integration)
+   * [Password Store, OpenKeychain - Android Integration](#password-store-openkeychain---android-integration)
+   * [Windows Integration - WSL2](#windows-integration---wsl2)
+   * [Next Apps and Possibilities](#next-apps-and-possibilities)
+   * [Pass - Credit &amp; License](#pass---credit--license)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: box, at: Sat Jun  7 10:17:35 AM CEST 2025 -->
+
+<!--te-->
 ## Links
 
 * https://www.passwordstore.org/

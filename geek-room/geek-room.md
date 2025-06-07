@@ -22,8 +22,21 @@ This channel is focused on new technologies, software features, game news and GN
 Individual topics will be gradually covered and YT videos will be uploaded and connected. So I'm presenting a preliminary plan here too. If you are interested in other points, create an GitHub issue, we will discuss it.
 
 There are a list of following topics
-```table-of-contents
-```
+<!--ts-->
+* [geek-room](#geek-room)
+   * [Technical](#technical)
+   * [Apps/Scripts](#appsscripts)
+   * [DE/WM](#dewm)
+   * [Shell Weekends](#shell-weekends)
+   * [Distros](#distros)
+   * [Games](#games)
+   * [Siren (AI)](#siren-ai)
+   * [Inbox](#inbox)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: box, at: Sat Jun  7 10:17:34 AM CEST 2025 -->
+
+<!--te-->
 ## Technical
 
 * [Git Basic2Advanced Tutorial](git-tutorial/git-tutorial.md) / [English Version Here](git-tutorial-en/git-tutorial-en.md)

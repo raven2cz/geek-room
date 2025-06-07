@@ -10,8 +10,23 @@ moc: "[[_geek-room]]"
 ![midnight-commander-logo](../attachments/midnight-commander-logo.png)
 
 # midnight-commander
-```table-of-contents
-```
+<!--ts-->
+* [midnight-commander](#midnight-commander)
+* [Mastering Midnight Commander: A Comprehensive Guide for Novice Linux Users](#mastering-midnight-commander-a-comprehensive-guide-for-novice-linux-users)
+   * [Installing Midnight Commander on Arch Linux](#installing-midnight-commander-on-arch-linux)
+   * [Basic Configuration: Improve Look and Feel and Application Control](#basic-configuration-improve-look-and-feel-and-application-control)
+   * [Keybindings: Accelerate your Productivity](#keybindings-accelerate-your-productivity)
+   * [Tips and Tricks for Advanced Users](#tips-and-tricks-for-advanced-users)
+      * [Customize the Visual Appearance](#customize-the-visual-appearance)
+      * [Make Use of the Internal Editor and Viewer](#make-use-of-the-internal-editor-and-viewer)
+      * [Use Virtual File Systems](#use-virtual-file-systems)
+      * [Bash Integration](#bash-integration)
+      * [Directory Hotlist](#directory-hotlist)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: box, at: Sat Jun  7 10:17:39 AM CEST 2025 -->
+
+<!--te-->
 # Mastering Midnight Commander: A Comprehensive Guide for Novice Linux Users
 
 **Midnight Commander** (MC) is a feature-rich file manager that uses a text-based interface (**TUI**). It's popular among Unix-like **system users**, especially those using Arch Linux, Debian, thanks to its versatile features and intuitive dual-pane navigation system. MC supports a variety of protocols including FTP and SFTP, incorporates a flexible keybinding mechanism, and much more. This article provides insights, tips, and tricks for mastering Midnight Commander, helping Linux users to significantly enhance their productivity.

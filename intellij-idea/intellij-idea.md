@@ -10,8 +10,21 @@ moc: "[[_geek-room]]"
 ![intellij-idea-banner](../attachments/intellij-idea-banner.jpg)
 
 # intellij-idea
-```table-of-contents
-```
+<!--ts-->
+* [intellij-idea](#intellij-idea)
+* [Intro](#intro)
+   * [Intellij IDEA](#intellij-idea-1)
+   * [JetBrains](#jetbrains)
+* [UI](#ui)
+* [Ergonomic (Mouseless)](#ergonomic-mouseless)
+* [Pro Tips](#pro-tips)
+   * [Built-in support for developing and deploying containerized applications using Docker](#built-in-support-for-developing-and-deploying-containerized-applications-using-docker)
+* [Another Worlds](#another-worlds)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
+<!-- Added by: box, at: Sat Jun  7 10:17:38 AM CEST 2025 -->
+
+<!--te-->
 # Intro
 
 ## Intellij IDEA
