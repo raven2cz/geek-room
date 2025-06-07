@@ -1,11 +1,16 @@
 ---
 title: siren-cz
-attachments: [siren-2.png, siren-3.png, siren-4.png, siren-5.png]
-tags: [Notebooks/Geek_Room]
-created: 2024-03-31T05:55:34.165Z
-modified: 2024-03-31T07:53:23.282Z
+attachments:
+  - siren-2.png
+  - siren-3.png
+  - siren-4.png
+  - siren-5.png
+tags:
+  - Notebooks/Geek_Room
+created: 2024-10-14 08:49
+modified: 2024-03-31T12:16:55.409Z
+moc: "[[_geek-room]]"
 ---
-
 # siren-cz
 
 ![](../attachments/siren-banner.png)
@@ -56,9 +61,20 @@ Projekt Siren přináší vizi pokročilé AI, která je nejen schopna autonomn�
 
 # Design
 
+## Siren Logo
+
 <div style="display: grid; grid-template-columns: repeat(2, minmax(auto, 500px)); grid-gap: 0px; width: 100%;">
-    <img src="../attachments/siren-2.png" alt="Obrázek 1" style="width: 100%; height: auto;">
-    <img src="../attachments/siren-3.png" alt="Obrázek 2" style="width: 100%; height: auto;">
+    <img src="siren-2.png" alt="Obrázek 1" style="width: 100%; height: auto;">
+    <img src="../../resources/attachments/siren-3.png" alt="Obrázek 2" style="width: 100%; height: auto;">
     <img src="../attachments/siren-4.png" alt="Obrázek 3" style="width: 100%; height: auto;">
     <img src="../attachments/siren-5.png" alt="Obrázek 4" style="width: 100%; height: auto;">
 </div>
+
+## Resources
+
+* RealtimeTTS processing: https://github.com/KoljaB/RealtimeTTS
+* LLM CLI+python: https://github.com/simonw/llm
+* LLM API 2: https://github.com/1b5d/llm-api
+* REST-GPT: https://restgpt.github.io/
+* REST API 2: https://www.youtube.com/watch?v=HI3cYN0c9ZU, https://www.youtube.com/watch?v=2Qldg68CL_M
+

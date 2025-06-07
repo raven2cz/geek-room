@@ -1,23 +1,18 @@
 ---
 title: intellij-idea-cz
-attachments: [Clipboard_2023-01-22-11-51-54.png]
-tags: [Notebooks/Geek_Room]
-created: 2023-01-21T18:20:11.215Z
+attachments:
+  - Clipboard_2023-01-22-11-51-54.png
+tags:
+  - Notebooks/Geek_Room
+created: 2024-05-25 20:02
 modified: 2023-11-23T18:06:53.439Z
+moc: "[[_geek-room]]"
 ---
-
 ![intellij-idea-banner](../attachments/intellij-idea-banner.jpg)
 
 # intellij-idea-cz
-
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:14 PM CET 2024 -->
-
-<!--te-->
-
+```table-of-contents
+```
 # Intro
 
 ## Intellij IDEA

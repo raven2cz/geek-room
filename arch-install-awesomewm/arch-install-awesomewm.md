@@ -1,11 +1,11 @@
 ---
 title: arch-install-awesomewm
-tags: [Notebooks/Geek_Room]
-favorited: true
-created: 2022-12-02T08:58:10.438Z
-modified: 2023-11-23T18:06:53.440Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-10-14 08:49
+modified: 2024-04-02T06:25:59.392Z
+moc: "[[_geek-room]]"
 ---
-
 # arch-install-awesomewm
 
 # AwesomeWM Raven2cz Ecosystem

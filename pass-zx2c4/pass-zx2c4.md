@@ -1,23 +1,16 @@
 ---
 title: pass-zx2c4
-tags: [Notebooks/Geek_Room]
-favorited: true
-created: 2022-10-30T08:26:09.163Z
-modified: 2023-11-23T18:06:53.439Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-05-25 20:02
+modified: 2024-04-02T06:25:51.152Z
+moc: "[[_geek-room]]"
 ---
 
 ![pass-zx2c4-banner](../attachments/pass-zx2c4-banner.png)
-
 # pass-zx2c4
-
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:13 PM CET 2024 -->
-
-<!--te-->
-
+```table-of-contents
+```
 ## Links
 
 * https://www.passwordstore.org/

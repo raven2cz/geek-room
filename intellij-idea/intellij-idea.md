@@ -1,22 +1,17 @@
 ---
 title: intellij-idea
-tags: [Notebooks/Geek_Room]
-created: 2023-01-21T11:42:35.393Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-05-25 20:02
 modified: 2023-11-23T18:06:53.439Z
+moc: "[[_geek-room]]"
 ---
 
 ![intellij-idea-banner](../attachments/intellij-idea-banner.jpg)
 
 # intellij-idea
-
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:14 PM CET 2024 -->
-
-<!--te-->
-
+```table-of-contents
+```
 # Intro
 
 ## Intellij IDEA
@@ -69,7 +64,7 @@ In summary, JetBrains is a privately held company that was founded in 2000 in Pr
 
 
 # UI
-![intellij-idea-dracula-theme.jpg](../attachments/intellij-idea-dracula-theme.jpg)
+![intellij-idea-dracula-theme.jpg|512](../attachments/intellij-idea-dracula-theme.jpg)
 
 https://monokai.pro/
 ![intellij-idea-monokai-pro.jpg](../attachments/intellij-idea-monokai-pro.jpg)
@@ -81,7 +76,7 @@ https://www.jetbrains.com/help/idea/new-ui.html
 ![intellij-idea-new-ui.jpg](../attachments/intellij-idea-new-ui.jpg)
 
 # Ergonomic (Mouseless)
-![intellij-idea-mouseless.jpg](../attachments/intellij-idea-mouseless.jpg)
+![intellij-idea-mouseless.jpg|875](../attachments/intellij-idea-mouseless.jpg)
 
 The "mouseless" approach refers to using keyboard shortcuts and commands instead of a mouse to navigate and interact with an application. In IntelliJ IDEA, you can use a variety of keyboard shortcuts to perform common actions, such as navigating between files, editing code, and running commands.
 

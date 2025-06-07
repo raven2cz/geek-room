@@ -1,22 +1,17 @@
 ---
 title: git-bare-repo
-tags: [Notebooks/Geek_Room]
-created: 2022-08-17T14:48:58.578Z
-modified: 2023-11-23T18:06:53.439Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-04-19 18:43
+modified: 2024-04-26 20:56
+moc: "[[_geek-room]]"
 ---
 
 ![git-bare-repo-banner](../attachments/git-bare-repo-banner.png)
 
 # git-bare-repo
-
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:13 PM CET 2024 -->
-
-<!--te-->
-
+```table-of-contents
+```
 ## What is a bare git repository?
 
 For full description, please refer this [article from Jon Saints](https://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/).

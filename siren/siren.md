@@ -1,11 +1,13 @@
 ---
 title: siren
-attachments: [siren-banner.png]
-tags: [Notebooks/Geek_Room]
-created: 2024-03-31T07:34:02.122Z
+attachments:
+  - siren-banner.png
+tags:
+  - Notebooks/Geek_Room
+created: 2024-10-14 08:49
 modified: 2024-03-31T07:52:45.642Z
+moc: "[[_geek-room]]"
 ---
-
 # siren
 
 ![](../attachments/siren-banner.png)

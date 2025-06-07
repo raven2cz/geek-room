@@ -1,22 +1,17 @@
 ---
 title: midnight-commander
-tags: [Notebooks/Geek_Room]
-created: 2023-05-24T12:18:30.780Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-05-25 20:02
 modified: 2023-11-23T18:06:53.439Z
+moc: "[[_geek-room]]"
 ---
 
 ![midnight-commander-logo](../attachments/midnight-commander-logo.png)
 
 # midnight-commander
-
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:15 PM CET 2024 -->
-
-<!--te-->
-
+```table-of-contents
+```
 # Mastering Midnight Commander: A Comprehensive Guide for Novice Linux Users
 
 **Midnight Commander** (MC) is a feature-rich file manager that uses a text-based interface (**TUI**). It's popular among Unix-like **system users**, especially those using Arch Linux, Debian, thanks to its versatile features and intuitive dual-pane navigation system. MC supports a variety of protocols including FTP and SFTP, incorporates a flexible keybinding mechanism, and much more. This article provides insights, tips, and tricks for mastering Midnight Commander, helping Linux users to significantly enhance their productivity.

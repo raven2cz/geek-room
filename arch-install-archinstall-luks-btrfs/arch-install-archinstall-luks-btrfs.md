@@ -1,10 +1,11 @@
 ---
 title: arch-install-archinstall-luks-btrfs
-tags: [Notebooks/Geek_Room]
-created: 2022-12-03T11:15:00.872Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-10-14 08:49
 modified: 2023-11-23T18:06:53.440Z
+moc: "[[_geek-room]]"
 ---
-
 # arch-install-archinstall-luks-btrfs
 
 Fast installation with `archinstall` script. Full record available in youtube raven2cz channel in a geek-room playlist.

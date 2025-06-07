@@ -1,21 +1,18 @@
 ---
 title: git-tutorial-en
-tags: [Notebooks/Geek_Room]
-created: 2024-03-08T06:01:27.369Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-05-25 20:02
 modified: 2024-03-14T07:15:42.174Z
+moc: "[[_geek-room]]"
 ---
 
 ![git-tutorial-banner](../attachments/git-tutorial-banner.webp)
 
 # git-tutorial-en
 
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Mar 14 08:16:07 AM CET 2024 -->
-
-<!--te-->
+```table-of-contents
+```
 
 # Part 1: Introduction to Git
 

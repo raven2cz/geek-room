@@ -1,19 +1,13 @@
 ---
 title: shell-weekends-navigation-basics
-tags: [Notebooks/Geek_Room]
-created: 2023-05-29T12:34:30.515Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-10-14 08:49
 modified: 2023-11-23T18:06:53.439Z
+moc: "[[_geek-room]]"
 ---
 
 # shell-weekends-navigation-basics
-
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:15 PM CET 2024 -->
-
-<!--te-->
 
 ## Basics
 

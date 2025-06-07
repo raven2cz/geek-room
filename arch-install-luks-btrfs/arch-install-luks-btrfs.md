@@ -1,17 +1,19 @@
 ---
 title: arch-install-luks-btrfs
-tags: [Notebooks/Geek_Room]
-created: 2022-11-27T18:36:13.194Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-10-14 08:49
 modified: 2023-11-23T18:06:53.440Z
+moc: "[[_geek-room]]"
 ---
-
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:13 PM CET 2024 -->
-
-<!--te-->
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 3 # Include headings up to the specified level
+includeLinks: true # Make headings clickable
+debugInConsole: false # Print debug info in Obsidian console
+```
 
 # arch-install-luks-btrfs
 

@@ -1,21 +1,17 @@
 ---
 title: games-steam-proton
-tags: [Notebooks/Geek_Room]
-created: 2023-12-09T09:45:10.580Z
+tags:
+  - Notebooks/Geek_Room
+created: 2024-05-25 20:02
 modified: 2023-12-09T11:44:02.386Z
+moc: "[[_geek-room]]"
 ---
-
 ![games-steam-proton-banner](../attachments/games-steam-proton-banner.jpg)
 
 # games-steam-proton
 
-<!--ts-->
-
-
-<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Thu Feb 29 12:01:15 PM CET 2024 -->
-
-<!--te-->
+```table-of-contents
+```
 
 ## Games on Linux
 

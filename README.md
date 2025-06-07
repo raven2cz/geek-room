@@ -1,1 +1,1 @@
-./geek-room/geek-room.md
+geek-room/README.md
