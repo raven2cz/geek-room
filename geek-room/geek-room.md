@@ -34,7 +34,7 @@ There are a list of following topics
    * [Inbox](#inbox)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Sat Jun  7 10:17:34 AM CEST 2025 -->
+<!-- Added by: box, at: Tue Aug  5 05:28:54 PM CEST 2025 -->
 
 <!--te-->
 ## Technical
@@ -43,6 +43,7 @@ There are a list of following topics
 * [Git Bare Repository for Dotfiles](git-bare-repo/git-bare-repo.md)
 * [Pass, gpg, passff, rofi-pass, password store, OpenKeyChain](pass-zx2c4/pass-zx2c4.md)
 * [Intellij IDEA (cz)](intellij-idea-cz/intellij-idea-cz.md)
+* [AUR Malware Attacks (cz)](aur-malware-attacks-cz/aur-malware-attacks-cz.md)
 * Arch Linux: Recommended Settings for Nvidia Cards
 * Polybar for DWM, AW
 * With Ansible on daily routines

@@ -96,7 +96,7 @@ moc: "[[_geek-room]]"
 * [Závěrečné myšlenky](#závěrečné-myšlenky)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Sat Jun  7 10:17:40 AM CEST 2025 -->
+<!-- Added by: box, at: Tue Aug  5 05:28:58 PM CEST 2025 -->
 
 <!--te-->
 
