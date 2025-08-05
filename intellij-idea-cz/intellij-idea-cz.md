@@ -50,7 +50,7 @@ moc: "[[_geek-room]]"
 * [Jiné světy](#jiné-světy)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Tue Aug  5 05:28:57 PM CEST 2025 -->
+<!-- Added by: box, at: Tue Aug  5 05:37:23 PM CEST 2025 -->
 
 <!--te-->
 # Intro

@@ -96,7 +96,7 @@ moc: "[[_geek-room]]"
 * [Final Thoughts](#final-thoughts)
 
 <!-- Created by https://github.com/ekalinin/github-markdown-toc -->
-<!-- Added by: box, at: Tue Aug  5 05:28:58 PM CEST 2025 -->
+<!-- Added by: box, at: Tue Aug  5 05:37:24 PM CEST 2025 -->
 
 <!--te-->
 
